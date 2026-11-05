@@ -1704,6 +1704,10 @@ dialog::backdrop { background: rgba(36, 26, 23, .62); }
     $('aperture-chips').addEventListener('click', function (e) { var b = e.target.closest('[data-apertura]'); if (b) aggiungiApertura(b.getAttribute('data-apertura')); });
 
     /* --- room controls: shape, corner, sizes --- */
+    function centriAperture() {
+      return aperture.map(function (o) { var g = geoApertura(o); return { x: (g.p0[0] + g.p1[0]) / 2, y: (g.p0[1] + g.p1[1]) / 2 }; });
+    }
+    function rimetti(centri) { aperture.forEach(function (o, i) { spostaApertura(o, centri[i]); }); }
     function riadatta() {
       stanza.rw = Math.max(40, Math.min(stanza.w - 100, stanza.rw));
       stanza.rd = Math.max(40, Math.min(stanza.d - 100, stanza.rd));
@@ -1718,7 +1722,10 @@ dialog::backdrop { background: rgba(36, 26, 23, .62); }
       var r = $(id + '-r'), n = $(id + '-n');
       function imposta(v) {
         v = Math.max(min, Math.min(+r.max, Math.round((+v || 0) / 10) * 10));
-        stanza[chiave] = v; r.value = v; n.value = v; riadatta();
+        var c = centriAperture();
+        stanza[chiave] = v; r.value = v; n.value = v;
+        stanza.rw = Math.max(40, Math.min(stanza.w - 100, stanza.rw)); stanza.rd = Math.max(40, Math.min(stanza.d - 100, stanza.rd));
+        rimetti(c); riadatta();
       }
       r.addEventListener('input', function () { imposta(r.value); });
       n.addEventListener('change', function () { imposta(n.value); });
@@ -1726,7 +1733,10 @@ dialog::backdrop { background: rgba(36, 26, 23, .62); }
     lega('larg', 'w', 200); lega('prof', 'd', 200); lega('rw', 'rw', 40); lega('rd', 'rd', 40);
     document.querySelectorAll('[data-forma]').forEach(function (b) {
       b.addEventListener('click', function () {
+        var c = centriAperture();
         stanza.forma = b.getAttribute('data-forma');
+        stanza.rw = Math.max(40, Math.min(stanza.w - 100, stanza.rw)); stanza.rd = Math.max(40, Math.min(stanza.d - 100, stanza.rd));
+        rimetti(c);
         document.querySelectorAll('[data-forma]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
         $('opz-L').hidden = stanza.forma !== 'L';
         riadatta();
@@ -1739,7 +1749,9 @@ dialog::backdrop { background: rgba(36, 26, 23, .62); }
     }).join('');
     $('angoli').addEventListener('click', function (e) {
       var b = e.target.closest('[data-angolo]'); if (!b) return;
+      var c = centriAperture();
       stanza.angolo = b.getAttribute('data-angolo');
+      rimetti(c);
       document.querySelectorAll('[data-angolo]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
       riadatta();
     });
