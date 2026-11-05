@@ -1,0 +1,1939 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#C1121F">
+<meta property="og:title" content="Outlet dei Mille">
+<meta property="og:description" content="Divani, materassi, mobili e stock a prezzi da outlet sul Corso dei Mille a Palermo.">
+<meta property="og:image" content="facciata.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Outlet dei Mille</title>
+<meta name="description" content="Outlet dei Mille, Corso dei Mille a Palermo: divani, materassi e sistemi di riposo, outlet mobili e stock a prezzi da outlet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap">
+<style>
+/* Layout: a shop you walk through. Red bands for the brand, yellow for prices, white for facts; Anton shouts, Barlow talks, Barlow Condensed labels like shop signage. */
+:root {
+  --rosso: #C1121F;
+  --rosso-scuro: #7A0A12;
+  --giallo: #FFC72C;
+  --bianco: #FFFFFF;
+  --carta: #FBF7EF;
+  --inchiostro: #241A17;
+  --grigio: #685A54;
+  --linea: #E7DDD0;
+  --display: "Anton", "Impact", "Arial Narrow", sans-serif;
+  --corpo: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --etichetta: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--carta); color: var(--inchiostro); font-family: var(--corpo); font-size: 18px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--rosso); }
+a { color: inherit; }
+button { font: inherit; }
+:focus-visible { outline: 3px solid var(--giallo); outline-offset: 3px; }
+.wrap { width: 100%; max-width: 1200px; margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.sr { position: absolute; left: 0; top: 0; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+html, body { overflow-x: clip; }
+.da { background: #FFF1C2; color: var(--rosso-scuro); border: 1px dashed var(--rosso-scuro); border-radius: 4px; padding: 0 6px; font-weight: 600; white-space: nowrap; }
+.lab { font-family: var(--etichetta); font-weight: 700; font-size: 15px; letter-spacing: .1em; text-transform: uppercase; }
+
+/* preview notice */
+.avviso { background: var(--inchiostro); color: var(--carta); font-size: 15px; }
+.avviso .wrap { padding-block: 8px; text-align: center; }
+
+/* header */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--rosso); color: var(--bianco); box-shadow: 0 2px 0 var(--rosso-scuro); }
+.top .wrap { padding-block: 10px; display: flex; align-items: center; gap: 10px 26px; flex-wrap: wrap; }
+.nav { display: flex; gap: 2px 22px; flex-wrap: wrap; margin-right: auto; }
+.nav a { font-family: var(--etichetta); font-weight: 700; font-size: 16px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; padding-block: 10px; }
+.nav a:hover { color: var(--giallo); }
+.azioni-top { display: flex; align-items: center; gap: 4px; }
+.ico-btn { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; color: var(--bianco); text-decoration: none; background: transparent; border: 0; cursor: pointer; position: relative; }
+.ico-btn:hover { background: rgba(255, 255, 255, .14); }
+.ico-btn svg { width: 22px; height: 22px; }
+.top .social-mini { display: flex; }
+.btn-carrello { width: auto; padding: 0 16px 0 12px; gap: 8px; display: inline-flex; align-items: center; border-radius: 999px; background: var(--giallo); color: var(--rosso-scuro); font-family: var(--etichetta); font-weight: 800; font-size: 16px; letter-spacing: .06em; text-transform: uppercase; }
+.btn-carrello:hover { background: #FFD558; }
+.num-carrello { min-width: 24px; height: 24px; padding: 0 6px; border-radius: 12px; background: var(--rosso); color: var(--bianco); font-size: 14px; display: inline-grid; place-items: center; font-variant-numeric: tabular-nums; }
+
+/* logo */
+.logo { display: inline-flex; align-items: center; gap: .32em; text-decoration: none; color: var(--bianco); font-size: 30px; line-height: 1; }
+.tag { display: inline-block; transform: rotate(-6deg); filter: drop-shadow(0 .06em 0 rgba(80, 6, 12, .35)); }
+.tag span { position: relative; display: inline-block; background: var(--giallo); color: var(--rosso-scuro); font-family: var(--display); letter-spacing: .02em; padding: .1em .32em .14em .9em; clip-path: polygon(17% 0, 100% 0, 100% 100%, 17% 100%, 0 50%); }
+.tag span::before { content: ""; position: absolute; left: .38em; top: 50%; width: .2em; height: .2em; margin-top: -.1em; border-radius: 50%; background: var(--rosso); }
+.logo b { font-family: var(--display); font-weight: 400; letter-spacing: .01em; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 10px 22px; border-radius: 6px; font-family: var(--etichetta); font-weight: 800; font-size: 17px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn-giallo { background: var(--giallo); color: var(--rosso-scuro); }
+.btn-giallo:hover { background: #FFD558; }
+.btn-linea { border-color: currentColor; color: inherit; background: transparent; }
+.btn-linea:hover { background: rgba(255, 255, 255, .12); }
+.btn-rosso { background: var(--rosso); color: var(--bianco); }
+.btn-rosso:hover { background: var(--rosso-scuro); }
+.btn-scuro { background: var(--inchiostro); color: var(--bianco); }
+.btn-scuro:hover { background: var(--rosso); }
+.btn-chiaro { background: var(--bianco); color: var(--inchiostro); border-color: var(--linea); }
+.btn-chiaro:hover { border-color: var(--inchiostro); }
+.azioni { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* hero */
+.hero { background: var(--rosso); color: var(--bianco); overflow: hidden; }
+.hero-grid { padding-block: 48px 0; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 24px 40px; align-items: center; }
+.hero-testo { display: grid; gap: 22px; min-width: 0; }
+.hero h1 { font-family: var(--display); font-weight: 400; font-size: clamp(48px, 7.4vw, 104px); line-height: .95; margin: 0; text-wrap: balance; text-transform: uppercase; }
+.hero h1 em { font-style: normal; color: var(--giallo); }
+.hero p { margin: 0; max-width: 32em; font-size: 20px; line-height: 1.5; color: #FFE7E3; }
+.cartellini { position: relative; height: 380px; min-width: 0; }
+.cartellini canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: pan-y; }
+.cartellini-nota { position: absolute; right: 0; bottom: 6px; font-size: 14px; color: #FFD7D2; }
+.foto { margin: 32px 0 0; position: relative; grid-column: 1 / -1; }
+.foto img { display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 7.6; object-fit: cover; object-position: center 64%; border-radius: 10px 10px 0 0; border: 6px solid var(--rosso-scuro); border-bottom: 0; }
+.foto-btn { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; position: relative; }
+.foto-zoom { position: absolute; right: 12px; top: 12px; width: 44px; height: 44px; border-radius: 50%; background: rgba(36, 26, 23, .72); color: var(--bianco); display: grid; place-items: center; }
+.foto-zoom svg { width: 22px; height: 22px; }
+.dlg-foto { width: min(1200px, calc(100% - 24px)); max-height: calc(100% - 24px); border-radius: 12px; background: var(--inchiostro); color: var(--bianco); }
+.dlg-foto .dlg { padding: 14px; }
+.foto-pan { overflow-x: auto; overscroll-behavior-x: contain; border-radius: 8px; }
+.foto-pan img { display: block; height: min(72vh, 680px); width: auto; max-width: none; }
+.foto-nota { margin: 10px 4px 0; font-size: 15px; color: #D9CEC8; }
+.foto figcaption { position: absolute; right: 14px; bottom: 12px; background: rgba(36, 26, 23, .78); color: var(--bianco); font-size: 14px; padding: 4px 10px; border-radius: 4px; }
+
+/* moving strip */
+.striscia { background: var(--giallo); color: var(--rosso-scuro); overflow: hidden; border-block: 3px solid var(--rosso-scuro); }
+.striscia-riga { display: flex; width: max-content; animation: scorri 40s linear infinite; }
+.striscia-riga span { font-family: var(--display); font-size: 30px; letter-spacing: .04em; padding: 10px 18px; white-space: nowrap; }
+.striscia-riga span:nth-child(even) { color: var(--rosso); }
+@keyframes scorri { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .striscia-riga { animation: none; } }
+
+/* sections */
+.sez { padding-block: 76px; }
+.occhiello { margin: 0 0 8px; color: var(--rosso); }
+.sez h2 { font-family: var(--display); font-weight: 400; font-size: clamp(40px, 6vw, 68px); line-height: 1; margin: 0 0 14px; text-transform: uppercase; text-wrap: balance; }
+.intro { max-width: 36em; margin: 0 0 36px; font-size: 20px; line-height: 1.5; color: var(--grigio); }
+
+/* shop */
+.negozio { background: var(--bianco); border-bottom: 1px solid var(--linea); }
+.barra { display: grid; gap: 12px; margin-bottom: 22px; }
+.barra-riga { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-family: var(--etichetta); font-weight: 700; font-size: 16px; letter-spacing: .06em; text-transform: uppercase; min-height: 44px; padding: 8px 18px; border-radius: 999px; border: 2px solid var(--inchiostro); background: transparent; color: var(--inchiostro); cursor: pointer; }
+.chip:hover { border-color: var(--rosso); color: var(--rosso); }
+.chip[aria-pressed="true"] { background: var(--rosso); border-color: var(--rosso); color: var(--bianco); }
+.chips-sub .chip { min-height: 40px; font-size: 15px; padding: 6px 14px; border-width: 1px; border-color: var(--linea); background: var(--carta); }
+.chips-sub .chip[aria-pressed="true"] { background: var(--inchiostro); border-color: var(--inchiostro); color: var(--bianco); }
+.ordina { display: flex; align-items: center; gap: 10px; font-size: 16px; color: var(--grigio); }
+.ordina select { min-height: 44px; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--linea); background: var(--carta); color: var(--inchiostro); font: inherit; font-size: 16px; }
+.conteggio { margin: 0 0 16px; font-size: 16px; color: var(--grigio); }
+.griglia { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.prodotto { position: relative; background: var(--carta); border: 1px solid var(--linea); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+.prodotto-img { position: relative; aspect-ratio: 4 / 3; max-width: 100%; background: var(--fondo); display: grid; place-items: center; border: 0; padding: 0; width: 100%; cursor: pointer; }
+.prodotto-img svg { width: 78%; height: auto; max-height: 84%; transition: transform .25s ease; }
+.prodotto-img:hover svg { transform: scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .prodotto-img svg { transition: none; } }
+.prodotto-img .tag { position: absolute; left: 14px; top: 14px; font-size: 22px; }
+.badge { position: absolute; right: 10px; top: 12px; background: var(--inchiostro); color: var(--bianco); font-family: var(--etichetta); font-weight: 700; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; }
+.esempio { position: absolute; right: 10px; bottom: 10px; background: rgba(255, 255, 255, .88); color: var(--grigio); font-family: var(--etichetta); font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; }
+.prodotto-corpo { padding: 16px; display: flex; flex-direction: column; gap: 4px; flex-grow: 1; }
+.prodotto-rep { margin: 0; font-family: var(--etichetta); font-weight: 700; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--rosso); }
+.prodotto h3 { font-family: var(--corpo); font-weight: 700; font-size: 19px; line-height: 1.25; margin: 0; text-wrap: balance; }
+.prodotto-det { font-size: 16px; line-height: 1.4; color: var(--grigio); margin: 0; }
+.prezzi { display: flex; align-items: baseline; gap: 10px; margin-top: auto; padding-top: 12px; font-variant-numeric: tabular-nums; flex-wrap: wrap; }
+.prezzo { font-family: var(--display); font-size: 34px; line-height: 1; color: var(--rosso); }
+.pieno { font-size: 16px; color: var(--grigio); text-decoration: line-through; }
+.prodotto-azioni { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; margin-top: 12px; }
+.prodotto-azioni .btn { min-height: 44px; padding: 8px 12px; font-size: 15px; }
+
+/* departments as shop aisles */
+.reparti { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.rep { position: relative; background: var(--bianco); border: 1px solid var(--linea); border-radius: 12px; padding: 28px 28px 14px; display: grid; gap: 10px; align-content: start; min-width: 0; overflow: hidden; }
+.rep-disegno { position: absolute; right: 14px; top: 10px; width: 150px; opacity: .95; pointer-events: none; }
+.rep-disegno svg { width: 100%; height: auto; display: block; }
+.rep h3 { font-family: var(--display); font-weight: 400; font-size: 46px; line-height: 1; margin: 0; padding-right: 150px; text-transform: uppercase; color: var(--rosso); text-wrap: balance; }
+.rep > p { margin: 0 0 6px; padding-right: 150px; color: var(--grigio); font-size: 18px; }
+.corsie { list-style: none; margin: 6px 0 0; padding: 0; border-top: 2px solid var(--inchiostro); }
+.corsie li { border-bottom: 1px solid var(--linea); }
+.corsie li:last-child { border-bottom: 0; }
+.corsia { width: 100%; min-height: 56px; display: grid; grid-template-columns: minmax(0, 1fr) auto 22px; align-items: center; gap: 14px; padding: 10px 6px; border: 0; background: transparent; color: inherit; text-align: left; cursor: pointer; border-radius: 6px; }
+.corsia:hover { background: var(--carta); }
+.corsia-nome { font-weight: 600; font-size: 19px; }
+.corsia-info { font-family: var(--etichetta); font-weight: 600; font-size: 16px; letter-spacing: .03em; color: var(--grigio); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.corsia-info b { color: var(--rosso); font-weight: 800; }
+.corsia svg { width: 22px; height: 22px; color: var(--rosso); transition: transform .2s ease; }
+.corsia:hover svg { transform: translateX(4px); }
+@media (prefers-reduced-motion: reduce) { .corsia svg { transition: none; } }
+.rep-stock { background: var(--rosso-scuro); color: var(--bianco); border-color: var(--rosso-scuro); }
+.rep-stock h3 { color: var(--giallo); }
+.rep-stock > p { color: #F3D3CF; }
+.rep-stock .corsie { border-top-color: var(--giallo); }
+.rep-stock .corsie li { border-bottom-color: rgba(255, 255, 255, .18); }
+.rep-stock .corsia:hover { background: rgba(255, 255, 255, .08); }
+.rep-stock .corsia-info { color: #F3D3CF; }
+.rep-stock .corsia-info b, .rep-stock .corsia svg { color: var(--giallo); }
+
+/* room planner */
+.pianta { background: var(--bianco); border-block: 1px solid var(--linea); }
+.planner { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.tela { position: sticky; top: calc(var(--testa, 64px) + env(safe-area-inset-top, 0px) + 10px); z-index: 1; background: var(--carta); border: 1px solid var(--linea); border-radius: 12px; padding: 10px; min-width: 0; }
+.tela canvas { display: block; width: 100%; height: 500px; touch-action: none; border-radius: 8px; cursor: grab; }
+.tela canvas:active { cursor: grabbing; }
+.tela { scroll-margin-top: calc(var(--testa, 64px) + 10px); }
+.tela-aiuto { margin: 8px 4px 0; font-size: 15px; color: var(--grigio); }
+.pannello { display: grid; gap: 18px; min-width: 0; }
+.pannello fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 14px; }
+.pannello legend, .pannello h3 { margin: 0 0 4px; padding: 0; font-family: var(--etichetta); font-weight: 800; font-size: 17px; letter-spacing: .08em; text-transform: uppercase; }
+.misura { display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: 6px 12px; align-items: center; }
+.misura label { grid-column: 1 / -1; font-weight: 600; font-size: 16px; }
+.misura input[type="range"] { width: 100%; accent-color: var(--rosso); }
+.misura input[type="number"] { width: 96px; min-height: 44px; padding: 6px 8px; border: 1px solid var(--linea); border-radius: 6px; background: var(--carta); color: var(--inchiostro); font: inherit; font-size: 16px; font-variant-numeric: tabular-nums; }
+.mobili-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.mobili-chips .chip { font-size: 15px; min-height: 40px; padding: 6px 14px; border-width: 1px; border-color: var(--linea); background: var(--carta); text-transform: none; letter-spacing: .02em; }
+.mobili-chips .chip small { color: var(--grigio); font-size: 14px; margin-left: 4px; }
+.selezione { background: var(--carta); border: 1px solid var(--linea); border-radius: 10px; padding: 16px; display: grid; gap: 10px; }
+.selezione p { margin: 0; font-size: 16px; }
+.selezione .btn { min-height: 44px; padding: 6px 14px; font-size: 15px; }
+.sel-nome { font-weight: 700; font-size: 18px; }
+.avviso-sovrapp { color: var(--rosso); font-weight: 600; }
+.tela-testa { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.seg-group { display: inline-flex; border: 2px solid var(--inchiostro); border-radius: 999px; overflow: hidden; max-width: 100%; justify-self: start; }
+.seg { min-height: 42px; padding: 6px 16px; border: 0; background: transparent; color: var(--inchiostro); font-family: var(--etichetta); font-weight: 800; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.seg + .seg { border-left: 2px solid var(--inchiostro); }
+.seg:hover { background: var(--carta); }
+.seg[aria-pressed="true"] { background: var(--inchiostro); color: var(--bianco); }
+.schede { display: flex; border-bottom: 2px solid var(--inchiostro); overflow-x: auto; scrollbar-width: none; }
+.schede::-webkit-scrollbar { display: none; }
+.scheda-tab { flex: 1 0 auto; min-height: 48px; padding: 8px 14px; border: 0; border-bottom: 4px solid transparent; margin-bottom: -2px; background: transparent; color: var(--grigio); font-family: var(--etichetta); font-weight: 800; font-size: 16px; letter-spacing: .05em; text-transform: uppercase; cursor: pointer; white-space: nowrap; }
+.scheda-tab:hover { color: var(--inchiostro); }
+.scheda-tab[aria-selected="true"] { color: var(--inchiostro); border-bottom-color: var(--rosso); }
+.pannello-tab { display: grid; gap: 14px; align-content: start; }
+.opz-l { display: grid; gap: 12px; padding: 14px; border-radius: 10px; background: var(--carta); border: 1px solid var(--linea); }
+.opz-titolo { margin: 0; font-weight: 600; font-size: 16px; }
+.angoli { display: flex; gap: 8px; flex-wrap: wrap; }
+.angolo-btn { width: 52px; height: 52px; border-radius: 8px; border: 2px solid var(--linea); background: var(--bianco); color: var(--grigio); cursor: pointer; display: grid; place-items: center; padding: 0; }
+.angolo-btn svg { width: 30px; height: 30px; }
+.angolo-btn:hover { border-color: var(--inchiostro); }
+.angolo-btn[aria-pressed="true"] { border-color: var(--rosso); color: var(--rosso); }
+
+/* why */
+.motivi { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.motivo { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.motivo-segno { font-family: var(--display); font-size: 56px; line-height: 1; color: var(--rosso); }
+.motivo h3 { font-family: var(--etichetta); font-weight: 800; font-size: 24px; letter-spacing: .03em; text-transform: uppercase; margin: 0; }
+.motivo p { margin: 0; color: var(--grigio); }
+
+/* visit */
+.visita { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 24px; align-items: stretch; }
+.scheda-dove { background: var(--rosso); color: var(--bianco); border-radius: 12px; padding: 32px; display: grid; gap: 22px; align-content: start; }
+.scheda-dove dl { margin: 0; display: grid; gap: 16px; }
+.scheda-dove dt { color: var(--giallo); }
+.scheda-dove dd { margin: 2px 0 0; font-size: 20px; }
+.orari { background: var(--bianco); border: 1px solid var(--linea); border-radius: 12px; padding: 28px; min-width: 0; }
+.orari h3 { margin: 0 0 10px; font-family: var(--etichetta); font-weight: 800; font-size: 20px; letter-spacing: .06em; text-transform: uppercase; }
+.orari table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.orari td { padding: 10px 0; border-bottom: 1px solid var(--linea); }
+.orari td:last-child { text-align: right; }
+.orari tr:last-child td { border-bottom: 0; }
+.nota { margin: 12px 0 0; font-size: 16px; color: var(--grigio); }
+
+/* social */
+.social { background: var(--giallo); color: var(--rosso-scuro); }
+.social .wrap { padding-block: 60px; display: grid; gap: 26px; }
+.social h2 { font-family: var(--display); font-weight: 400; font-size: clamp(36px, 5vw, 56px); line-height: 1; margin: 0; text-transform: uppercase; }
+.social-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.social-card { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 4px 14px; align-items: center; padding: 16px; border-radius: 10px; background: var(--bianco); color: var(--inchiostro); text-decoration: none; border: 2px solid transparent; min-width: 0; }
+.social-card:hover { border-color: var(--rosso-scuro); }
+.social-card .ico { grid-row: span 2; width: 48px; height: 48px; border-radius: 12px; background: var(--rosso); color: var(--bianco); display: grid; place-items: center; }
+.social-card .ico svg { width: 26px; height: 26px; }
+.social-card b { font-family: var(--etichetta); font-weight: 800; font-size: 20px; letter-spacing: .04em; text-transform: uppercase; }
+.social-card span { font-size: 15px; color: var(--grigio); min-width: 0; }
+
+/* footer */
+.piede { background: var(--inchiostro); color: #E9DFD8; font-size: 16px; }
+.piede .wrap { padding-block: 44px; display: flex; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
+.piede .logo { font-size: 26px; }
+.piede p { margin: 0; }
+.piede-info { display: grid; gap: 6px; }
+.piede .social-mini { display: flex; gap: 4px; margin-top: 6px; }
+
+/* dialogs */
+dialog { border: 0; padding: 0; background: var(--bianco); color: var(--inchiostro); }
+dialog::backdrop { background: rgba(36, 26, 23, .62); }
+.dlg-prodotto { border-radius: 12px; width: min(560px, calc(100% - 32px)); max-height: calc(100% - 32px); }
+.dlg { padding: 26px; display: grid; gap: 12px; position: relative; }
+.dlg-img { aspect-ratio: 16 / 9; border-radius: 8px; display: grid; place-items: center; background: var(--fondo); max-width: 100%; }
+.dlg-img svg { width: 62%; height: auto; }
+.dlg h3 { font-family: var(--display); font-weight: 400; font-size: 34px; line-height: 1.05; margin: 0; text-transform: uppercase; text-wrap: balance; }
+.dlg p { margin: 0; }
+.dlg-misure { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; font-size: 16px; margin: 0; }
+.dlg-misure dt { color: var(--grigio); }
+.dlg-misure dd { margin: 0; font-weight: 600; }
+.dlg label { font-weight: 600; font-size: 16px; }
+.dlg textarea { width: 100%; min-height: 84px; padding: 12px; border-radius: 8px; border: 1px solid var(--linea); background: var(--carta); color: var(--inchiostro); font: inherit; font-size: 16px; resize: vertical; }
+.chiudi { position: absolute; right: 12px; top: 12px; width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--bianco); color: var(--inchiostro); cursor: pointer; display: grid; place-items: center; box-shadow: 0 0 0 1px var(--linea); z-index: 1; }
+.chiudi:hover { background: var(--carta); }
+.chiudi svg { width: 20px; height: 20px; }
+.whatsapp-box { border-top: 1px solid var(--linea); padding-top: 14px; display: grid; gap: 8px; }
+.esito { min-height: 1.4em; font-size: 15px; color: var(--rosso-scuro); font-weight: 600; }
+
+/* cart drawer */
+.drawer { margin: 0 0 0 auto; width: min(460px, 100%); height: 100%; max-height: 100%; border-radius: 0; }
+.drawer-in { min-height: 100%; display: flex; flex-direction: column; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); padding-right: env(safe-area-inset-right, 0px); }
+.drawer-testa { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 22px; background: var(--rosso); color: var(--bianco); }
+.drawer-testa h2 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 32px; text-transform: uppercase; }
+.drawer-testa .chiudi { position: static; box-shadow: none; }
+.drawer-corpo { padding: 18px 22px 26px; display: grid; gap: 18px; align-content: start; }
+.righe { list-style: none; margin: 0; padding: 0; display: grid; }
+.riga { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; padding: 14px 0; border-bottom: 1px solid var(--linea); }
+.riga-nome { font-weight: 600; font-size: 17px; line-height: 1.3; }
+.riga-prezzo { font-family: var(--display); font-size: 22px; color: var(--rosso); text-align: right; font-variant-numeric: tabular-nums; }
+.qta { display: inline-flex; align-items: center; border: 1px solid var(--linea); border-radius: 999px; overflow: hidden; }
+.qta button { width: 40px; height: 40px; border: 0; background: var(--carta); color: var(--inchiostro); cursor: pointer; font-size: 20px; line-height: 1; }
+.qta button:hover { background: var(--linea); }
+.qta span { min-width: 34px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.togli { justify-self: end; align-self: center; background: none; border: 0; color: var(--grigio); text-decoration: underline; cursor: pointer; font-size: 15px; min-height: 40px; }
+.totali { display: grid; gap: 6px; font-variant-numeric: tabular-nums; }
+.totali div { display: flex; justify-content: space-between; gap: 12px; }
+.totali .tot { font-size: 22px; font-weight: 700; }
+.totali .risp { color: var(--rosso); font-weight: 600; }
+.vuoto { text-align: center; padding: 30px 0; display: grid; gap: 14px; justify-items: center; color: var(--grigio); }
+.form-ordine { display: grid; gap: 12px; }
+.form-ordine fieldset { border: 1px solid var(--linea); border-radius: 10px; margin: 0; padding: 12px 14px; display: grid; gap: 6px; }
+.form-ordine legend { padding: 0 6px; font-family: var(--etichetta); font-weight: 800; font-size: 16px; letter-spacing: .08em; text-transform: uppercase; }
+.opzione { display: flex; align-items: flex-start; gap: 10px; min-height: 44px; padding-block: 6px; font-size: 16px; cursor: pointer; }
+.opzione input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--rosso); }
+.campo { display: grid; gap: 4px; }
+.campo label { font-weight: 600; font-size: 16px; }
+.campo input { min-height: 46px; padding: 8px 12px; border: 1px solid var(--linea); border-radius: 6px; background: var(--carta); color: var(--inchiostro); font: inherit; font-size: 17px; }
+.anteprima-nota { font-size: 15px; color: var(--grigio); margin: 0; }
+.fatto { display: grid; gap: 12px; }
+.fatto h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 30px; text-transform: uppercase; color: var(--rosso); }
+.fatto p { margin: 0; }
+
+/* weekly offers carousel + collapsible full catalogue */
+.vetrina-testa { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px 24px; flex-wrap: wrap; margin-bottom: 24px; }
+.vetrina-testa .intro { margin-bottom: 0; }
+.frecce { display: flex; gap: 10px; }
+.freccia-btn { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--inchiostro); background: transparent; color: var(--inchiostro); cursor: pointer; display: grid; place-items: center; }
+.freccia-btn:hover { background: var(--inchiostro); color: var(--bianco); }
+.freccia-btn svg { width: 22px; height: 22px; }
+.vetrina-track { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(260px, 290px); gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; padding-bottom: 14px; scrollbar-width: thin; scrollbar-color: var(--rosso) var(--linea); }
+.vetrina-track > .prodotto { scroll-snap-align: start; }
+.catalogo-apri { margin-top: 26px; display: flex; justify-content: center; }
+.catalogo { margin-top: 30px; padding-top: 30px; border-top: 2px solid var(--inchiostro); }
+
+/* scroll story: the price drops as you scroll (canvas 2D drawing, DOM text) */
+.storia { position: relative; height: 300vh; background: var(--inchiostro); color: var(--bianco); }
+.storia-pin { position: sticky; top: calc(var(--testa, 64px) + env(safe-area-inset-top, 0px)); height: calc(100vh - var(--testa, 64px) - env(safe-area-inset-top, 0px)); min-height: 460px; display: flex; align-items: center; overflow: hidden; }
+.storia-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 32px; align-items: center; width: 100%; }
+.storia .occhiello { color: var(--giallo); }
+.storia h2 { font-family: var(--display); font-weight: 400; font-size: clamp(36px, 5vw, 60px); line-height: 1; margin: 0 0 22px; text-transform: uppercase; text-wrap: balance; }
+.passi { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.passo { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 14px; opacity: .4; transition: opacity .35s ease; }
+.passo.attivo { opacity: 1; }
+.passo-n { grid-row: span 2; width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--giallo); color: var(--giallo); display: grid; place-items: center; font-family: var(--display); font-size: 22px; }
+.passo.attivo .passo-n { background: var(--giallo); color: var(--rosso-scuro); }
+.passo b { font-family: var(--etichetta); font-weight: 800; font-size: 24px; letter-spacing: .03em; text-transform: uppercase; }
+.passo span { color: #D9CEC8; font-size: 18px; line-height: 1.45; }
+.storia-tela { position: relative; height: min(64vh, 540px); min-height: 300px; min-width: 0; }
+.storia-tela canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.storia-scorri { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); font-family: var(--etichetta); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 14px; color: #BFB3AD; }
+@media (prefers-reduced-motion: reduce) {
+  .storia { height: auto; }
+  .storia-pin { position: static; height: auto; min-height: 0; padding-block: 64px; }
+  .passo { opacity: 1; transition: none; }
+  .storia-scorri { display: none; }
+}
+
+/* toast */
+.toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 20; background: var(--inchiostro); color: var(--bianco); padding: 12px 18px; border-radius: 8px; font-weight: 600; box-shadow: 0 6px 24px rgba(36, 26, 23, .3); max-width: calc(100% - 32px); }
+
+@media (max-width: 1340px) { .top .social-mini { display: none; } }
+@media (max-width: 1100px) { .griglia { grid-template-columns: repeat(3, minmax(0, 1fr)); } .social-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .cartellini { height: 230px; order: -1; }
+  .planner { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .tela { position: static; }
+  .scheda-tab { flex: 1 1 auto; font-size: 14px; padding: 8px 8px; letter-spacing: .03em; }
+  .pannello { gap: 16px; }
+  .griglia { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reparti, .visita { grid-template-columns: minmax(0, 1fr); }
+  .motivi { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .top .social-mini { display: none; }
+}
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .top .wrap { padding-block: 6px 0; gap: 0 12px; flex-wrap: wrap; }
+  .logo { font-size: 21px; }
+  .azioni-top { margin-left: auto; }
+  .btn-carrello { padding: 0 10px; gap: 6px; height: 40px; }
+  .testo-carr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .nav { order: 3; width: 100%; flex-wrap: nowrap; overflow-x: auto; gap: 0 20px; margin: 0; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { flex: none; white-space: nowrap; font-size: 15px; padding-block: 8px; }
+  .hero-grid { padding-block: 24px 0; }
+  .hero p, .intro { font-size: 18px; }
+  .cartellini { height: 190px; }
+  .foto { margin-top: 20px; }
+  .foto img { aspect-ratio: auto; height: auto; object-fit: fill; border-width: 4px; border-radius: 8px 8px 0 0; }
+  .foto figcaption { font-size: 12px; right: auto; left: 8px; bottom: 8px; }
+  .foto-zoom { right: 8px; top: 8px; }
+  .rep { padding: 22px 18px 10px; }
+  .rep-disegno { width: 96px; right: 8px; top: 8px; }
+  .rep h3 { font-size: 38px; padding-right: 96px; }
+  .rep > p { padding-right: 0; }
+  .sez { padding-block: 54px; }
+  .striscia-riga span { font-size: 24px; }
+  .tela canvas { height: 290px; }
+  .tela { padding: 8px; }
+  .tela-aiuto { font-size: 14px; }
+  .social-grid { grid-template-columns: minmax(0, 1fr); }
+  .dlg { padding: 20px; }
+  .vetrina-track { grid-auto-columns: 80%; }
+  .frecce { display: none; }
+}
+@media (max-width: 900px) {
+  .storia-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .storia-tela { order: -1; height: 40vh; min-height: 220px; }
+  .storia h2 { margin-bottom: 12px; }
+  .passo:not(.attivo) { display: none; }
+  .storia-scorri { display: none; }
+}
+@media (max-width: 900px) and (prefers-reduced-motion: reduce) { .passo:not(.attivo) { display: grid; } }
+@media (max-width: 520px) { .griglia { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<div class="avviso"><div class="wrap">Anteprima del sito. Articoli e prezzi sono esempi. I campi <span class="da">evidenziati</span> vanno completati.</div></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inizio" aria-label="Outlet dei Mille, torna all'inizio"><span class="tag"><span>OUTLET</span></span><b>DEI MILLE</b></a>
+    <nav class="nav" aria-label="Sezioni">
+      <a href="#negozio">Negozio online</a>
+      <a href="#reparti">Reparti</a>
+      <a href="#ci-entra">Ci entra?</a>
+      <a href="#dove">Dove siamo</a>
+    </nav>
+    <div class="azioni-top">
+      <div class="social-mini">
+        <a class="ico-btn" href="#social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a class="ico-btn" href="#social" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M14 21v-7h3l.5-3.5H14V8.5c0-1 .4-1.8 1.9-1.8H18V3.5c-.4-.1-1.6-.2-2.9-.2-2.8 0-4.6 1.7-4.6 4.8v2.4H7.5V14h3v7"/></svg></a>
+        <a class="ico-btn" href="#social" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.7 2.4 4.7 5 5"/></svg></a>
+        <a class="ico-btn" href="#social" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/></svg></a>
+      </div>
+      <button class="ico-btn btn-carrello" type="button" id="apri-carrello" aria-label="Apri il carrello">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+        <span class="testo-carr">Carrello</span> <span class="num-carrello" id="num-carrello">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="inizio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-testo">
+        <h1>Divani, materassi e mobili a <em>prezzi da outlet</em></h1>
+        <p>Un unico grande negozio sul Corso dei Mille. Divani, materassi e sistemi di riposo, mobili di fine serie e stock di ogni tipo di merce.</p>
+        <div class="azioni">
+          <a class="btn btn-giallo" href="#negozio">Vedi le offerte</a>
+          <a class="btn btn-linea" href="https://www.google.com/maps/search/?api=1&amp;query=Corso+dei+Mille+Palermo" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            Come arrivare
+          </a>
+        </div>
+      </div>
+      <div class="cartellini" id="cartellini">
+        <canvas role="img" aria-label="Cartellini dei prezzi appesi che oscillano. Toccane uno per vedere gli sconti più alti."></canvas>
+        <span class="cartellini-nota" aria-hidden="true">Tocca un cartellino</span>
+      </div>
+      <figure class="foto">
+        <button class="foto-btn" type="button" id="foto-apri" aria-label="Ingrandisci la foto della facciata">
+          <img src="facciata.jpg" alt="La facciata del negozio Outlet dei Mille con l'insegna rossa e gialla sul tetto, le vetrine dei divani e le ringhiere rosse" width="1672" height="941">
+          <span class="foto-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M11 8.5v5M8.5 11h5"/></svg></span>
+        </button>
+        <figcaption>Simulazione del nuovo negozio</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="striscia" aria-hidden="true">
+    <div class="striscia-riga">
+      <span>DIVANI</span><span>PREZZI DA OUTLET</span><span>MATERASSI</span><span>SISTEMI DI RIPOSO</span><span>OUTLET MOBILI</span><span>STOCK</span><span>QUANDO FINISCE, FINISCE</span>
+      <span>DIVANI</span><span>PREZZI DA OUTLET</span><span>MATERASSI</span><span>SISTEMI DI RIPOSO</span><span>OUTLET MOBILI</span><span>STOCK</span><span>QUANDO FINISCE, FINISCE</span>
+    </div>
+  </div>
+
+  <section class="storia" id="perche" aria-labelledby="storia-titolo">
+    <div class="storia-pin">
+      <div class="wrap storia-grid">
+        <div>
+          <p class="occhiello lab">Perché conviene</p>
+          <h2 id="storia-titolo">Guarda il prezzo scendere</h2>
+          <ol class="passi" id="passi">
+            <li class="passo attivo"><span class="passo-n" aria-hidden="true">1</span><b>Prezzo di listino</b><span>Un divano angolare nuovo, in un negozio tradizionale: 1.490 €.</span></li>
+            <li class="passo"><span class="passo-n" aria-hidden="true">2</span><b>Lo compriamo in blocco</b><span>Fine serie, pezzi da esposizione e stock interi. Meno passaggi, meno costi.</span></li>
+            <li class="passo"><span class="passo-n" aria-hidden="true">3</span><b>Il prezzo sul cartellino</b><span>Da noi lo paghi 890 €. Risparmi 600 €, e lo vedi scritto.</span></li>
+          </ol>
+        </div>
+        <div class="storia-tela" id="storia-tela">
+          <canvas role="img" aria-label="Un divano angolare con il cartellino: il prezzo scende da 1.490 euro a 890 euro, sconto del 40 per cento."></canvas>
+          <span class="storia-scorri" id="storia-scorri" aria-hidden="true">Scorri ↓</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sez negozio" id="negozio">
+    <div class="wrap">
+      <div class="vetrina-testa">
+        <div>
+          <p class="occhiello lab">Negozio online</p>
+          <h2>Le offerte della settimana</h2>
+          <p class="intro">Prezzi veri, pezzi contati. Quando un pezzo finisce, non torna.</p>
+        </div>
+        <div class="frecce">
+          <button class="freccia-btn" type="button" id="vetrina-prev" aria-label="Offerte precedenti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+          <button class="freccia-btn" type="button" id="vetrina-next" aria-label="Offerte successive"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+      <div class="vetrina-track" id="vetrina" tabindex="0" role="region" aria-label="Offerte della settimana. Scorri di lato per vederle tutte."></div>
+      <div class="catalogo-apri">
+        <button class="btn btn-scuro" type="button" id="catalogo-apri" aria-expanded="false" aria-controls="catalogo">Vedi tutti gli articoli</button>
+      </div>
+      <div class="catalogo" id="catalogo" hidden>
+        <div class="barra">
+          <div class="barra-riga">
+            <div class="chips" id="chips-rep" role="group" aria-label="Reparto">
+              <button class="chip" type="button" data-rep="tutti" aria-pressed="true">Tutti</button>
+              <button class="chip" type="button" data-rep="divani" aria-pressed="false">Divani</button>
+              <button class="chip" type="button" data-rep="materassi" aria-pressed="false">Materassi</button>
+              <button class="chip" type="button" data-rep="mobili" aria-pressed="false">Mobili</button>
+              <button class="chip" type="button" data-rep="stock" aria-pressed="false">Stock</button>
+            </div>
+            <div class="ordina">
+              <label for="ordina">Ordina per</label>
+              <select id="ordina">
+                <option value="evidenza">In evidenza</option>
+                <option value="sconto">Sconto più alto</option>
+                <option value="prezzo-su">Prezzo più basso</option>
+                <option value="prezzo-giu">Prezzo più alto</option>
+              </select>
+            </div>
+          </div>
+          <div class="chips chips-sub" id="chips-sub" role="group" aria-label="Tipo di articolo" hidden></div>
+        </div>
+        <p class="conteggio" id="conteggio" role="status"></p>
+        <div class="griglia" id="griglia"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sez" id="reparti">
+    <div class="wrap">
+      <p class="occhiello lab">I reparti</p>
+      <h2>Quattro negozi in uno</h2>
+      <p class="intro">Scegli la corsia e vai dritto agli articoli che ti servono.</p>
+      <div class="reparti">
+        <article class="rep">
+          <div class="rep-disegno" data-disegno="divano" data-colore="#CDB99B" aria-hidden="true"></div>
+          <h3>Centro divani</h3>
+          <p>Le vetrine sul Corso. Siediti, prova e scegli misura e tessuto.</p>
+          <ul class="corsie" data-rep="divani"></ul>
+        </article>
+        <article class="rep">
+          <div class="rep-disegno" data-disegno="materasso" data-colore="#F3F1EC" aria-hidden="true"></div>
+          <h3>Materassi e riposo</h3>
+          <p>Una zona prova per sdraiarti e capire le differenze, con prezzi chiari.</p>
+          <ul class="corsie" data-rep="materassi"></ul>
+        </article>
+        <article class="rep">
+          <div class="rep-disegno" data-disegno="armadio" data-colore="#F2EEE7" aria-hidden="true"></div>
+          <h3>Outlet mobili</h3>
+          <p>Esposizione, fine serie e rimanenze a prezzi che altrove non trovi.</p>
+          <ul class="corsie" data-rep="mobili"></ul>
+        </article>
+        <article class="rep rep-stock">
+          <div class="rep-disegno" data-disegno="tessile" data-colore="#FFC72C" aria-hidden="true"></div>
+          <h3>Stock</h3>
+          <p>Lotti di ogni tipo di merce. Quello che vedi oggi domani può non esserci più.</p>
+          <ul class="corsie" data-rep="stock"></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sez pianta" id="ci-entra">
+    <div class="wrap">
+      <p class="occhiello lab">Prova a casa tua</p>
+      <h2>Ci entra?</h2>
+      <p class="intro">Disegna la tua stanza, anche a forma di L, metti porte e finestre e trascina i mobili. Poi guardala in 3D.</p>
+      <div class="planner">
+        <div class="tela">
+          <div class="tela-testa">
+            <div class="seg-group" role="group" aria-label="Vista">
+              <button class="seg" type="button" data-vista="2d" aria-pressed="true">Pianta</button>
+              <button class="seg" type="button" data-vista="3d" aria-pressed="false">Vista 3D</button>
+            </div>
+          </div>
+          <canvas id="tela" tabindex="0" aria-label="La tua stanza. Trascina mobili, porte e finestre. Con la tastiera: frecce per spostare l'elemento scelto, R per ruotarlo, Canc per toglierlo." aria-describedby="sel-stato"></canvas>
+          <p class="tela-aiuto" id="tela-aiuto">Vista dall'alto: ogni quadretto è 50 cm. Trascina mobili, porte e finestre.</p>
+        </div>
+        <div class="pannello">
+          <div class="selezione" id="selezione">
+            <p id="sel-stato" role="status">Tocca un mobile nella pianta.</p>
+            <div class="azioni" id="sel-azioni" hidden>
+              <button class="btn btn-chiaro" type="button" id="sel-ruota">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v5h-5"/></svg>Ruota
+              </button>
+              <button class="btn btn-chiaro" type="button" id="sel-gira">Gira l'apertura</button>
+              <button class="btn btn-chiaro" type="button" id="sel-togli">Togli</button>
+              <button class="btn btn-rosso" type="button" id="sel-carrello">Aggiungi al carrello</button>
+            </div>
+          </div>
+
+          <div class="schede" role="tablist" aria-label="Impostazioni della stanza">
+            <button class="scheda-tab" type="button" role="tab" id="tab-b-stanza" aria-controls="tab-stanza" aria-selected="true">Stanza</button>
+            <button class="scheda-tab" type="button" role="tab" id="tab-b-aperture" aria-controls="tab-aperture" aria-selected="false" tabindex="-1">Porte e finestre</button>
+            <button class="scheda-tab" type="button" role="tab" id="tab-b-mobili" aria-controls="tab-mobili" aria-selected="false" tabindex="-1">Mobili</button>
+          </div>
+
+          <div class="pannello-tab" role="tabpanel" id="tab-stanza" aria-labelledby="tab-b-stanza">
+            <div class="seg-group" role="group" aria-label="Forma della stanza">
+              <button class="seg" type="button" data-forma="rett" aria-pressed="true">Rettangolare</button>
+              <button class="seg" type="button" data-forma="L" aria-pressed="false">A forma di L</button>
+            </div>
+            <div class="misura">
+              <label for="larg-n">Larghezza totale (cm)</label>
+              <input type="range" id="larg-r" min="200" max="800" step="10" value="420" aria-label="Larghezza totale della stanza in centimetri">
+              <input type="number" id="larg-n" min="200" max="800" step="10" value="420">
+            </div>
+            <div class="misura">
+              <label for="prof-n">Profondità totale (cm)</label>
+              <input type="range" id="prof-r" min="200" max="800" step="10" value="360" aria-label="Profondità totale della stanza in centimetri">
+              <input type="number" id="prof-n" min="200" max="800" step="10" value="360">
+            </div>
+            <div class="opz-l" id="opz-L" hidden>
+              <p class="opz-titolo">Dov'è la rientranza?</p>
+              <div class="angoli" id="angoli" role="group" aria-label="Angolo della rientranza"></div>
+              <div class="misura">
+                <label for="rw-n">Rientranza, larghezza (cm)</label>
+                <input type="range" id="rw-r" min="40" max="320" step="10" value="140" aria-label="Larghezza della rientranza in centimetri">
+                <input type="number" id="rw-n" min="40" max="320" step="10" value="140">
+              </div>
+              <div class="misura">
+                <label for="rd-n">Rientranza, profondità (cm)</label>
+                <input type="range" id="rd-r" min="40" max="260" step="10" value="120" aria-label="Profondità della rientranza in centimetri">
+                <input type="number" id="rd-n" min="40" max="260" step="10" value="120">
+              </div>
+            </div>
+          </div>
+
+          <div class="pannello-tab" role="tabpanel" id="tab-aperture" aria-labelledby="tab-b-aperture" hidden>
+            <p class="opz-titolo">Aggiungile e poi trascinale lungo i muri, dove si trovano davvero.</p>
+            <div class="mobili-chips" id="aperture-chips">
+              <button class="chip" type="button" data-apertura="porta">+ Porta<small>80 cm</small></button>
+              <button class="chip" type="button" data-apertura="finestra">+ Finestra<small>120 cm</small></button>
+            </div>
+          </div>
+
+          <div class="pannello-tab" role="tabpanel" id="tab-mobili" aria-labelledby="tab-b-mobili" hidden>
+            <p class="opz-titolo">Tocca un mobile per metterlo al centro della stanza.</p>
+            <div class="mobili-chips" id="mobili-chips"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sez pianta" id="dove">
+    <div class="wrap">
+      <p class="occhiello lab">Dove siamo</p>
+      <h2>Sul Corso dei Mille</h2>
+      <p class="intro">Il negozio con l'insegna rossa e gialla sul tetto. Si vede da lontano.</p>
+      <div class="visita">
+        <div class="scheda-dove">
+          <dl>
+            <div><dt class="lab">Indirizzo</dt><dd>Corso dei Mille <span class="da">[numero civico]</span>, <span class="da">[CAP]</span> Palermo</dd></div>
+            <div><dt class="lab">Telefono</dt><dd><span class="da">[numero di telefono]</span></dd></div>
+            <div><dt class="lab">WhatsApp</dt><dd><span class="da">[numero WhatsApp]</span></dd></div>
+            <div><dt class="lab">Email</dt><dd><span class="da">[indirizzo email]</span></dd></div>
+          </dl>
+          <div class="azioni">
+            <a class="btn btn-giallo" href="https://www.google.com/maps/search/?api=1&amp;query=Corso+dei+Mille+Palermo" target="_blank" rel="noopener">Apri in Google Maps</a>
+          </div>
+        </div>
+        <div class="orari">
+          <h3>Orari di apertura</h3>
+          <table>
+            <tbody>
+              <tr><td>Lunedì</td><td><span class="da">[orario]</span></td></tr>
+              <tr><td>Martedì</td><td><span class="da">[orario]</span></td></tr>
+              <tr><td>Mercoledì</td><td><span class="da">[orario]</span></td></tr>
+              <tr><td>Giovedì</td><td><span class="da">[orario]</span></td></tr>
+              <tr><td>Venerdì</td><td><span class="da">[orario]</span></td></tr>
+              <tr><td>Sabato</td><td><span class="da">[orario]</span></td></tr>
+              <tr><td>Domenica</td><td><span class="da">[orario]</span></td></tr>
+            </tbody>
+          </table>
+          <p class="nota">Parcheggio nel cortile davanti al negozio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social" id="social">
+    <div class="wrap">
+      <div>
+        <p class="lab" style="margin: 0 0 8px;">Seguici</p>
+        <h2>Gli affari arrivano prima sui social</h2>
+      </div>
+      <div class="social-grid">
+        <a class="social-card" href="#social">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+          <b>Instagram</b><span><span class="da">[@profilo]</span></span>
+        </a>
+        <a class="social-card" href="#social">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M14 21v-7h3l.5-3.5H14V8.5c0-1 .4-1.8 1.9-1.8H18V3.5c-.4-.1-1.6-.2-2.9-.2-2.8 0-4.6 1.7-4.6 4.8v2.4H7.5V14h3v7"/></svg></span>
+          <b>Facebook</b><span><span class="da">[pagina]</span></span>
+        </a>
+        <a class="social-card" href="#social">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.7 2.4 4.7 5 5"/></svg></span>
+          <b>TikTok</b><span><span class="da">[@profilo]</span></span>
+        </a>
+        <a class="social-card" href="#social">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/></svg></span>
+          <b>WhatsApp</b><span><span class="da">[numero]</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <div style="display: grid; gap: 12px;">
+      <span class="logo" aria-hidden="true"><span class="tag"><span>OUTLET</span></span><b>DEI MILLE</b></span>
+      <p>Divani · Materassi · Mobili · Stock</p>
+    </div>
+    <div class="piede-info">
+      <p>Corso dei Mille <span class="da">[numero civico]</span>, Palermo</p>
+      <p>P.IVA <span class="da">[partita IVA]</span></p>
+      <div class="social-mini">
+        <a class="ico-btn" href="#social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a class="ico-btn" href="#social" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M14 21v-7h3l.5-3.5H14V8.5c0-1 .4-1.8 1.9-1.8H18V3.5c-.4-.1-1.6-.2-2.9-.2-2.8 0-4.6 1.7-4.6 4.8v2.4H7.5V14h3v7"/></svg></a>
+        <a class="ico-btn" href="#social" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.4 2.7 2.4 4.7 5 5"/></svg></a>
+        <a class="ico-btn" href="#social" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<dialog class="dlg-prodotto" id="scheda" aria-labelledby="dlg-titolo">
+  <div class="dlg">
+    <button class="chiudi" type="button" data-chiudi aria-label="Chiudi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="dlg-img" id="dlg-img"></div>
+    <p class="prodotto-rep" id="dlg-rep"></p>
+    <h3 id="dlg-titolo">Articolo</h3>
+    <p class="prodotto-det" id="dlg-det"></p>
+    <dl class="dlg-misure" id="dlg-misure"></dl>
+    <div class="prezzi" style="padding-top: 4px;">
+      <span class="prezzo" id="dlg-prezzo"></span>
+      <span class="pieno" id="dlg-pieno"></span>
+    </div>
+    <p id="dlg-disp" style="font-size: 16px;"></p>
+    <div class="azioni">
+      <button class="btn btn-rosso" type="button" id="dlg-aggiungi">Aggiungi al carrello</button>
+      <button class="btn btn-chiaro" type="button" id="dlg-prova">Prova se ci entra</button>
+    </div>
+    <div class="whatsapp-box">
+      <label for="dlg-msg">Preferisci chiedere? Copia il messaggio e mandalo su WhatsApp</label>
+      <textarea id="dlg-msg" rows="3"></textarea>
+      <div class="azioni"><button class="btn btn-chiaro" type="button" id="dlg-copia">Copia il messaggio</button></div>
+      <p class="esito" id="dlg-esito" role="status"></p>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="drawer" id="carrello" aria-labelledby="carr-titolo">
+  <div class="drawer-in">
+    <div class="drawer-testa">
+      <h2 id="carr-titolo">Il tuo carrello</h2>
+      <button class="chiudi" type="button" data-chiudi aria-label="Chiudi il carrello">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="drawer-corpo" id="carr-corpo"></div>
+  </div>
+</dialog>
+
+<dialog class="dlg-foto" id="dlg-foto" aria-label="Foto della facciata">
+  <div class="dlg">
+    <button class="chiudi" type="button" data-chiudi aria-label="Chiudi">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="foto-pan" id="foto-pan" tabindex="0" role="region" aria-label="Foto ingrandita. Scorri di lato per vedere tutta la facciata.">
+      <img src="facciata.jpg" alt="La facciata del negozio Outlet dei Mille, ingrandita" width="1672" height="941">
+    </div>
+    <p class="foto-nota">Scorri di lato per vedere tutta la facciata. Simulazione del nuovo negozio.</p>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function () {
+  var REPARTI = { divani: 'Centro divani', materassi: 'Materassi e riposo', mobili: 'Outlet mobili', stock: 'Stock' };
+  var SOTTO = {
+    divani: ['Divani 2 e 3 posti', 'Angolari', 'Divani letto', 'Relax e recliner', 'Poltrone'],
+    materassi: ['Materassi', 'Reti e letti', 'Guanciali', 'Topper'],
+    mobili: ['Camere da letto', 'Soggiorni', 'Tavoli e sedie', 'Complementi'],
+    stock: ['Cucina', 'Tessile casa', 'Giardino']
+  };
+  var FONDI = { divani: '#EFE4D6', materassi: '#E6E9EC', mobili: '#ECE3D3', stock: '#F6E7C4' };
+
+  // Example articles. Names, prices and quantities are placeholders until the real stock is known.
+  // pianta = footprint in cm for the room planner; forma 'L' adds a chaise on the right.
+  var prodotti = [
+    { cod: 'DV-101', breve: 'Divano 3 posti', rep: 'divani', sub: 'Divani 2 e 3 posti', nome: 'Divano 3 posti in tessuto antimacchia', det: 'Grigio perla, cuscini sfoderabili', misure: '216 × 95 cm, altezza 88 cm', pieno: 899, prezzo: 549, disegno: 'divano', colore: '#A39C96', stato: null, pianta: { w: 216, d: 95, h: 88, tipo: 'divano' } },
+    { cod: 'DV-102', breve: 'Angolare', rep: 'divani', sub: 'Angolari', nome: 'Divano angolare con penisola', det: 'Tessuto beige, penisola a destra', misure: '280 × 160 cm, altezza 90 cm', pieno: 1490, prezzo: 890, disegno: 'angolare', colore: '#CDB99B', stato: 'Ultimi 2', pianta: { w: 280, d: 160, forma: 'L', base: 95, chaise: 95, h: 90, tipo: 'divano' } },
+    { cod: 'DV-103', breve: 'Divano letto', rep: 'divani', sub: 'Divani letto', nome: 'Divano letto 2 posti', det: 'Apertura a libro, materasso 12 cm', misure: '165 × 90 cm, aperto 165 × 210 cm', pieno: 790, prezzo: 449, disegno: 'divano', colore: '#6F7C86', stato: null, pianta: { w: 165, d: 90, h: 85, tipo: 'divano' } },
+    { cod: 'DV-104', breve: 'Recliner', rep: 'divani', sub: 'Relax e recliner', nome: 'Poltrona relax recliner', det: 'Schienale reclinabile manuale, ecopelle', misure: '80 × 92 cm, altezza 102 cm', pieno: 590, prezzo: 299, disegno: 'poltrona', colore: '#7A5A48', stato: 'Pezzo unico', pianta: { w: 80, d: 92, h: 102, tipo: 'divano' } },
+    { cod: 'DV-105', breve: 'Poltrona', rep: 'divani', sub: 'Poltrone', nome: 'Poltrona in velluto', det: 'Verde salvia, gambe in legno', misure: '76 × 80 cm, altezza 85 cm', pieno: 390, prezzo: 199, disegno: 'poltrona', colore: '#7D8F78', stato: null, pianta: { w: 76, d: 80, h: 85, tipo: 'divano' } },
+    { cod: 'MT-201', rep: 'materassi', sub: 'Materassi', nome: 'Materasso memory 160x190', det: 'Rivestimento sfoderabile e lavabile', misure: '160 × 190 cm, altezza 24 cm', pieno: 799, prezzo: 349, disegno: 'materasso', colore: '#F3F1EC', stato: null },
+    { cod: 'MT-202', rep: 'materassi', sub: 'Materassi', nome: 'Materasso a molle insacchettate 160x190', det: '800 molle indipendenti', misure: '160 × 190 cm, altezza 26 cm', pieno: 990, prezzo: 499, disegno: 'materasso', colore: '#EDE6DA', stato: null },
+    { cod: 'MT-203', rep: 'materassi', sub: 'Reti e letti', nome: 'Rete a doghe motorizzata 80x190', det: 'Alzata testa e piedi con telecomando', misure: '80 × 190 cm', pieno: 450, prezzo: 249, disegno: 'rete', colore: '#B89A72', stato: 'Ultimi 3' },
+    { cod: 'MT-204', rep: 'materassi', sub: 'Guanciali', nome: 'Coppia di guanciali memory', det: 'Forma a saponetta, fodera in cotone', misure: '72 × 42 cm, altezza 12 cm', pieno: 79, prezzo: 39, disegno: 'guanciali', colore: '#F5F3EF', stato: null },
+    { cod: 'MT-205', rep: 'materassi', sub: 'Topper', nome: 'Topper memory 160x190', det: 'Fascia con elastici agli angoli', misure: '160 × 190 cm, altezza 5 cm', pieno: 129, prezzo: 59, disegno: 'topper', colore: '#F2EFE8', stato: null },
+    { cod: 'MB-301', breve: 'Tavolo', rep: 'mobili', sub: 'Tavoli e sedie', nome: 'Tavolo allungabile effetto rovere', det: 'Gambe in metallo nero', misure: '140 × 80 cm, allungato 190 cm', pieno: 520, prezzo: 279, disegno: 'tavolo', colore: '#B98B5E', stato: null, pianta: { w: 140, d: 80, h: 76, tipo: 'tavolo' } },
+    { cod: 'MB-302', rep: 'mobili', sub: 'Tavoli e sedie', nome: 'Set di 4 sedie imbottite', det: 'Tessuto grigio, struttura in legno', misure: 'Seduta 45 × 52 cm, altezza 90 cm', pieno: 360, prezzo: 179, disegno: 'sedia', colore: '#8E8F92', stato: null },
+    { cod: 'MB-303', breve: 'Armadio', rep: 'mobili', sub: 'Camere da letto', nome: 'Armadio 4 ante scorrevoli', det: 'Da esposizione, bianco e rovere', misure: '250 × 65 cm, altezza 240 cm', pieno: 1190, prezzo: 590, disegno: 'armadio', colore: '#F2EEE7', stato: 'Pezzo unico', pianta: { w: 250, d: 65, h: 240 } },
+    { cod: 'MB-304', breve: 'Letto 160', rep: 'mobili', sub: 'Camere da letto', nome: 'Letto contenitore 160x190', det: 'Ecopelle tortora, rete inclusa', misure: '170 × 210 cm', pieno: 690, prezzo: 349, disegno: 'letto', colore: '#A18E7E', stato: null, pianta: { w: 170, d: 210, h: 100, tipo: 'letto' } },
+    { cod: 'MB-305', breve: 'Madia', rep: 'mobili', sub: 'Soggiorni', nome: 'Madia 3 ante', det: 'Bianco opaco e rovere', misure: '160 × 45 cm, altezza 80 cm', pieno: 490, prezzo: 229, disegno: 'madia', colore: '#F2EEE7', stato: null, pianta: { w: 160, d: 45, h: 80 } },
+    { cod: 'MB-306', rep: 'mobili', sub: 'Complementi', nome: 'Specchio da terra', det: 'Cornice in metallo nero', misure: '50 × 170 cm', pieno: 149, prezzo: 69, disegno: 'specchio', colore: '#2F2B2A', stato: 'Ultimi 4' },
+    { cod: 'ST-401', rep: 'stock', sub: 'Cucina', nome: 'Set pentole antiaderenti 10 pezzi', det: 'Adatte anche a induzione', misure: 'Da 16 a 28 cm', pieno: 129, prezzo: 49, disegno: 'pentola', colore: '#3E3A39', stato: null },
+    { cod: 'ST-402', rep: 'stock', sub: 'Tessile casa', nome: 'Piumone 4 stagioni matrimoniale', det: 'Due pesi uniti con bottoni', misure: '250 × 200 cm', pieno: 99, prezzo: 39, disegno: 'tessile', colore: '#F4F1EA', stato: 'Ultimi 5' },
+    { cod: 'ST-403', rep: 'stock', sub: 'Tessile casa', nome: 'Set 6 asciugamani in spugna', det: '100% cotone, colori assortiti', misure: '3 viso e 3 ospite', pieno: 35, prezzo: 14.9, disegno: 'tessile', colore: '#7FA7B5', stato: null },
+    { cod: 'ST-404', rep: 'stock', sub: 'Giardino', nome: 'Ombrellone da giardino 3 metri', det: 'Palo centrale, telo beige', misure: 'Diametro 300 cm', pieno: 89, prezzo: 39, disegno: 'ombrellone', colore: '#D9C7A6', stato: null }
+  ];
+  var perCod = {};
+  prodotti.forEach(function (p) { perCod[p.cod] = p; });
+
+  function euro(n) {
+    var dec = Math.round(n * 100) % 100 ? 2 : 0;
+    return new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR', minimumFractionDigits: dec, maximumFractionDigits: dec }).format(n);
+  }
+  function sconto(p) { return Math.round((1 - p.prezzo / p.pieno) * 100); }
+  function tono(hex, f) {
+    var n = parseInt(hex.slice(1), 16), r = n >> 16, g = (n >> 8) & 255, b = n & 255;
+    var k = function (v) { return Math.max(0, Math.min(255, Math.round(v * f))); };
+    return 'rgb(' + k(r) + ',' + k(g) + ',' + k(b) + ')';
+  }
+  function chiaro(hex) {
+    var n = parseInt(hex.slice(1), 16);
+    return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) > 150;
+  }
+  function plurale(n, uno, tanti) { return n + ' ' + (n === 1 ? uno : tanti); }
+
+  // Simple product drawings so the example cards have a picture without using anyone's photos.
+  function disegno(tipo, c, etichetta) {
+    var d = tono(c, 0.78), l = tono(c, 1.08), legno = '#5A4335', ombra = '<ellipse cx="100" cy="130" rx="82" ry="6" fill="rgba(36,26,23,.10)"/>';
+    var s = {
+      divano: '<rect x="30" y="40" width="140" height="44" rx="12" fill="' + d + '"/><rect x="34" y="78" width="132" height="32" rx="8" fill="' + c + '"/><line x1="100" y1="80" x2="100" y2="108" stroke="' + d + '" stroke-width="2"/><rect x="16" y="60" width="26" height="54" rx="10" fill="' + d + '"/><rect x="158" y="60" width="26" height="54" rx="10" fill="' + d + '"/><rect x="28" y="114" width="6" height="12" fill="' + legno + '"/><rect x="166" y="114" width="6" height="12" fill="' + legno + '"/>',
+      angolare: '<rect x="18" y="40" width="166" height="42" rx="12" fill="' + d + '"/><rect x="24" y="76" width="100" height="32" rx="8" fill="' + c + '"/><rect x="118" y="76" width="66" height="44" rx="8" fill="' + l + '"/><line x1="74" y1="78" x2="74" y2="106" stroke="' + d + '" stroke-width="2"/><rect x="8" y="58" width="24" height="56" rx="10" fill="' + d + '"/><rect x="20" y="114" width="6" height="12" fill="' + legno + '"/><rect x="176" y="120" width="6" height="8" fill="' + legno + '"/>',
+      poltrona: '<rect x="62" y="26" width="76" height="62" rx="16" fill="' + d + '"/><rect x="68" y="80" width="64" height="30" rx="8" fill="' + c + '"/><rect x="46" y="58" width="26" height="56" rx="10" fill="' + d + '"/><rect x="128" y="58" width="26" height="56" rx="10" fill="' + d + '"/><rect x="58" y="114" width="6" height="12" fill="' + legno + '"/><rect x="136" y="114" width="6" height="12" fill="' + legno + '"/>',
+      materasso: '<polygon points="26,66 146,66 180,90 60,90" fill="' + l + '" stroke="#D8D2C8" stroke-width="1.5"/><rect x="60" y="90" width="120" height="30" fill="' + c + '" stroke="#D8D2C8" stroke-width="1.5"/><polygon points="26,66 60,90 60,120 26,96" fill="' + tono(c, 0.9) + '" stroke="#D8D2C8" stroke-width="1.5"/><line x1="60" y1="98" x2="180" y2="98" stroke="#C1121F" stroke-width="2" opacity=".5"/><line x1="60" y1="112" x2="180" y2="112" stroke="#C1121F" stroke-width="2" opacity=".5"/>',
+      topper: '<polygon points="26,84 146,84 180,104 60,104" fill="' + l + '" stroke="#D8D2C8" stroke-width="1.5"/><rect x="60" y="104" width="120" height="10" fill="' + c + '" stroke="#D8D2C8" stroke-width="1.5"/><polygon points="26,84 60,104 60,114 26,94" fill="' + tono(c, 0.9) + '" stroke="#D8D2C8" stroke-width="1.5"/>',
+      rete: '<rect x="18" y="60" width="164" height="44" rx="4" fill="none" stroke="' + d + '" stroke-width="6"/>' + [36, 54, 72, 90, 108, 126, 144, 162].map(function (x) { return '<rect x="' + (x - 4) + '" y="64" width="8" height="36" fill="' + c + '"/>'; }).join('') + '<rect x="24" y="104" width="6" height="22" fill="#3E3A39"/><rect x="170" y="104" width="6" height="22" fill="#3E3A39"/><rect x="88" y="104" width="24" height="10" rx="2" fill="#3E3A39"/>',
+      guanciali: '<rect x="30" y="74" width="140" height="40" rx="18" fill="' + c + '" stroke="#D8D2C8" stroke-width="1.5"/><rect x="40" y="46" width="124" height="36" rx="16" fill="' + l + '" stroke="#D8D2C8" stroke-width="1.5"/>',
+      tavolo: '<rect x="20" y="54" width="160" height="12" rx="3" fill="' + c + '"/><rect x="20" y="66" width="160" height="4" fill="' + d + '"/><rect x="34" y="70" width="7" height="56" fill="#3E3A39"/><rect x="159" y="70" width="7" height="56" fill="#3E3A39"/>',
+      sedia: '<rect x="70" y="20" width="60" height="54" rx="10" fill="' + d + '"/><rect x="62" y="72" width="76" height="18" rx="6" fill="' + c + '"/><rect x="68" y="90" width="7" height="36" fill="' + legno + '"/><rect x="125" y="90" width="7" height="36" fill="' + legno + '"/>',
+      armadio: '<rect x="34" y="14" width="132" height="112" rx="4" fill="' + c + '" stroke="#CFC6B8" stroke-width="2"/><rect x="34" y="14" width="66" height="112" fill="#C59A6B" opacity=".55"/><line x1="67" y1="14" x2="67" y2="126" stroke="#CFC6B8" stroke-width="2"/><line x1="100" y1="14" x2="100" y2="126" stroke="#CFC6B8" stroke-width="2"/><line x1="133" y1="14" x2="133" y2="126" stroke="#CFC6B8" stroke-width="2"/><rect x="92" y="62" width="4" height="18" rx="2" fill="#5A4335"/><rect x="104" y="62" width="4" height="18" rx="2" fill="#5A4335"/>',
+      letto: '<rect x="26" y="26" width="148" height="56" rx="10" fill="' + d + '"/><rect x="34" y="72" width="132" height="16" rx="4" fill="#F3F1EC"/><rect x="20" y="86" width="160" height="30" rx="6" fill="' + c + '"/><rect x="28" y="116" width="6" height="10" fill="' + legno + '"/><rect x="166" y="116" width="6" height="10" fill="' + legno + '"/>',
+      madia: '<rect x="20" y="50" width="160" height="62" rx="3" fill="' + c + '" stroke="#CFC6B8" stroke-width="2"/><rect x="20" y="50" width="160" height="10" fill="#C59A6B" opacity=".6"/><line x1="73" y1="60" x2="73" y2="112" stroke="#CFC6B8" stroke-width="2"/><line x1="127" y1="60" x2="127" y2="112" stroke="#CFC6B8" stroke-width="2"/><rect x="30" y="112" width="6" height="14" fill="#3E3A39"/><rect x="164" y="112" width="6" height="14" fill="#3E3A39"/>',
+      specchio: '<rect x="74" y="8" width="52" height="118" rx="26" fill="' + c + '"/><rect x="80" y="14" width="40" height="106" rx="20" fill="#DDE6EA"/><path d="M90 30 L108 20 M88 48 L112 34" stroke="#FFFFFF" stroke-width="3" opacity=".8"/>',
+      pentola: '<rect x="50" y="60" width="100" height="56" rx="10" fill="' + c + '"/><ellipse cx="100" cy="60" rx="54" ry="10" fill="' + tono(c, 1.5) + '"/><rect x="92" y="40" width="16" height="12" rx="4" fill="#C1121F"/><rect x="30" y="70" width="22" height="8" rx="4" fill="' + c + '"/><rect x="148" y="70" width="22" height="8" rx="4" fill="' + c + '"/>',
+      tessile: '<rect x="40" y="92" width="120" height="24" rx="9" fill="' + c + '" stroke="rgba(36,26,23,.12)"/><rect x="46" y="68" width="108" height="24" rx="9" fill="' + l + '" stroke="rgba(36,26,23,.12)"/><rect x="52" y="44" width="96" height="24" rx="9" fill="' + tono(c, 0.88) + '" stroke="rgba(36,26,23,.12)"/>',
+      ombrellone: '<path d="M18 62 Q100 2 182 62 Z" fill="' + c + '"/><path d="M18 62 Q59 52 100 62 Q141 52 182 62" fill="none" stroke="' + d + '" stroke-width="3"/><rect x="97" y="30" width="6" height="90" fill="#3E3A39"/><rect x="78" y="118" width="44" height="9" rx="3" fill="#3E3A39"/>'
+    };
+    var aria = etichetta ? ' role="img" aria-label="' + etichetta + '"' : ' aria-hidden="true"';
+    return '<svg viewBox="0 0 200 140"' + aria + '>' + ombra + s[tipo] + '</svg>';
+  }
+
+  var $ = function (id) { return document.getElementById(id); };
+  var toastTimer;
+  function avvisa(testo) {
+    var t = $('toast');
+    t.textContent = testo; t.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { t.hidden = true; }, 2600);
+  }
+  function apri(dlg) { if (typeof dlg.showModal === 'function') { if (!dlg.open) dlg.showModal(); } else dlg.setAttribute('open', ''); }
+  function chiudi(dlg) { if (dlg.close) dlg.close(); else dlg.removeAttribute('open'); }
+  document.querySelectorAll('dialog').forEach(function (dlg) {
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) chiudi(dlg); });
+    dlg.querySelectorAll('[data-chiudi]').forEach(function (b) { b.addEventListener('click', function () { chiudi(dlg); }); });
+  });
+  var vaiA = function (id) { $(id).scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); };
+
+  /* ---------- facade photo: full on phones, tap to enlarge and pan ---------- */
+  $('foto-apri').addEventListener('click', function () {
+    apri($('dlg-foto'));
+    var pan = $('foto-pan');
+    requestAnimationFrame(function () { pan.scrollLeft = (pan.scrollWidth - pan.clientWidth) * 0.6; });
+  });
+
+  /* ---------- shop ---------- */
+  var stato = { rep: 'tutti', sub: null, ordine: 'evidenza' };
+  var freccia = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+  function scheda(p) {
+    return '<article class="prodotto">' +
+      '<button class="prodotto-img" type="button" data-dettagli="' + p.cod + '" style="--fondo:' + FONDI[p.rep] + '" aria-label="Dettagli: ' + p.nome + '">' + disegno(p.disegno, p.colore) +
+        '<span class="tag"><span>-' + sconto(p) + '%</span></span>' +
+        (p.stato ? '<span class="badge">' + p.stato + '</span>' : '') +
+        '<span class="esempio">Esempio</span>' +
+      '</button>' +
+      '<div class="prodotto-corpo">' +
+        '<p class="prodotto-rep">' + p.sub + '</p>' +
+        '<h3>' + p.nome + '</h3>' +
+        '<p class="prodotto-det">' + p.misure + '</p>' +
+        '<div class="prezzi"><span class="prezzo">' + euro(p.prezzo) + '</span><span class="pieno"><span class="sr">Prezzo pieno </span>' + euro(p.pieno) + '</span></div>' +
+        '<div class="prodotto-azioni">' +
+          '<button class="btn btn-rosso" type="button" data-aggiungi="' + p.cod + '">Aggiungi</button>' +
+          '<button class="btn btn-chiaro" type="button" data-dettagli="' + p.cod + '">Dettagli</button>' +
+        '</div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  function disegnaNegozio() {
+    var lista = prodotti.filter(function (p) {
+      return (stato.rep === 'tutti' || p.rep === stato.rep) && (!stato.sub || p.sub === stato.sub);
+    });
+    if (stato.ordine === 'sconto') lista.sort(function (a, b) { return sconto(b) - sconto(a); });
+    if (stato.ordine === 'prezzo-su') lista.sort(function (a, b) { return a.prezzo - b.prezzo; });
+    if (stato.ordine === 'prezzo-giu') lista.sort(function (a, b) { return b.prezzo - a.prezzo; });
+    $('griglia').innerHTML = lista.map(scheda).join('');
+    var dove = stato.sub ? ' · ' + stato.sub : (stato.rep === 'tutti' ? '' : ' · ' + REPARTI[stato.rep]);
+    $('conteggio').textContent = plurale(lista.length, 'articolo', 'articoli') + dove;
+    document.querySelectorAll('#chips-rep .chip').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-rep') === stato.rep)); });
+    var subBox = $('chips-sub');
+    if (stato.rep === 'tutti') { subBox.hidden = true; subBox.innerHTML = ''; }
+    else {
+      subBox.hidden = false;
+      subBox.innerHTML = '<button class="chip" type="button" data-sub="" aria-pressed="' + (!stato.sub) + '">Tutto ' + REPARTI[stato.rep] + '</button>' +
+        SOTTO[stato.rep].map(function (s) { return '<button class="chip" type="button" data-sub="' + s + '" aria-pressed="' + (stato.sub === s) + '">' + s + '</button>'; }).join('');
+    }
+    $('ordina').value = stato.ordine;
+  }
+  function apriCatalogo(si) {
+    $('catalogo').hidden = !si;
+    $('catalogo-apri').setAttribute('aria-expanded', String(si));
+    $('catalogo-apri').textContent = si ? 'Nascondi l\'elenco completo' : 'Vedi tutti i ' + prodotti.length + ' articoli';
+  }
+  function filtra(rep, sub, ordine) {
+    stato.rep = rep; stato.sub = sub || null; if (ordine) stato.ordine = ordine;
+    apriCatalogo(true);
+    disegnaNegozio();
+  }
+  // weekly offers: the biggest discounts, scrolled sideways instead of a long grid
+  $('vetrina').innerHTML = prodotti.slice().sort(function (a, b) { return sconto(b) - sconto(a); }).slice(0, 8).map(scheda).join('');
+  function sposta(dir) {
+    var t = $('vetrina'), card = t.querySelector('.prodotto');
+    var passo = card ? card.getBoundingClientRect().width + 18 : 300;
+    t.scrollBy({ left: dir * passo, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }
+  $('vetrina-prev').addEventListener('click', function () { sposta(-1); });
+  $('vetrina-next').addEventListener('click', function () { sposta(1); });
+  $('catalogo-apri').addEventListener('click', function () {
+    var aperto = $('catalogo').hidden;
+    apriCatalogo(aperto);
+    if (aperto) disegnaNegozio(); else vaiA('negozio');
+  });
+  apriCatalogo(false);
+  $('chips-rep').addEventListener('click', function (e) { var b = e.target.closest('[data-rep]'); if (b) filtra(b.getAttribute('data-rep'), null); });
+  $('chips-sub').addEventListener('click', function (e) { var b = e.target.closest('[data-sub]'); if (b) filtra(stato.rep, b.getAttribute('data-sub')); });
+  $('ordina').addEventListener('change', function () { stato.ordine = this.value; disegnaNegozio(); });
+  $('negozio').addEventListener('click', function (e) {
+    var a = e.target.closest('[data-aggiungi]'); if (a) { aggiungi(a.getAttribute('data-aggiungi')); return; }
+    var d = e.target.closest('[data-dettagli]'); if (d) apriScheda(d.getAttribute('data-dettagli'));
+  });
+
+  /* ---------- departments ---------- */
+  document.querySelectorAll('.rep-disegno').forEach(function (el) { el.innerHTML = disegno(el.getAttribute('data-disegno'), el.getAttribute('data-colore')); });
+  document.querySelectorAll('.corsie').forEach(function (ul) {
+    var rep = ul.getAttribute('data-rep');
+    ul.innerHTML = SOTTO[rep].map(function (s) {
+      var art = prodotti.filter(function (p) { return p.rep === rep && p.sub === s; });
+      var min = Math.min.apply(null, art.map(function (p) { return p.prezzo; }));
+      var info = art.length ? plurale(art.length, 'offerta', 'offerte') + ' · da <b>' + euro(min) + '</b>' : 'Chiedi in negozio';
+      return '<li><button class="corsia" type="button" data-rep="' + rep + '" data-sub="' + s + '"><span class="corsia-nome">' + s + '</span><span class="corsia-info">' + info + '</span>' + freccia + '</button></li>';
+    }).join('');
+    ul.addEventListener('click', function (e) {
+      var b = e.target.closest('.corsia'); if (!b) return;
+      filtra(b.getAttribute('data-rep'), b.getAttribute('data-sub'));
+      vaiA('catalogo');
+    });
+  });
+
+  /* ---------- product dialog ---------- */
+  var codAperto = null;
+  function apriScheda(cod) {
+    var p = perCod[cod]; codAperto = cod;
+    $('dlg-img').style.setProperty('--fondo', FONDI[p.rep]);
+    $('dlg-img').innerHTML = disegno(p.disegno, p.colore, 'Illustrazione d\'esempio: ' + p.nome);
+    $('dlg-rep').textContent = REPARTI[p.rep] + ' · ' + p.sub + ' · cod. ' + p.cod;
+    $('dlg-titolo').textContent = p.nome;
+    $('dlg-det').textContent = p.det;
+    $('dlg-misure').innerHTML = '<dt>Misure</dt><dd>' + p.misure + '</dd><dt>Disponibilità</dt><dd>' + (p.stato || 'In negozio') + '</dd>';
+    $('dlg-prezzo').textContent = euro(p.prezzo);
+    $('dlg-pieno').textContent = euro(p.pieno);
+    $('dlg-disp').textContent = 'Risparmi ' + euro(p.pieno - p.prezzo) + ' (-' + sconto(p) + '%).';
+    $('dlg-prova').hidden = !p.pianta;
+    $('dlg-msg').value = 'Ciao, ho visto sul sito ' + p.nome + ' (cod. ' + p.cod + ') a ' + euro(p.prezzo) + '. È ancora disponibile?';
+    $('dlg-esito').textContent = '';
+    apri($('scheda'));
+  }
+  $('dlg-aggiungi').addEventListener('click', function () { aggiungi(codAperto); chiudi($('scheda')); });
+  $('dlg-prova').addEventListener('click', function () { chiudi($('scheda')); pianta.aggiungi(codAperto); vaiA('ci-entra'); });
+  $('dlg-copia').addEventListener('click', function () {
+    var msg = $('dlg-msg'), esito = $('dlg-esito');
+    function aMano() { msg.focus(); msg.select(); esito.textContent = 'Testo selezionato: copialo e incollalo su WhatsApp.'; }
+    try { navigator.clipboard.writeText(msg.value).then(function () { esito.textContent = 'Messaggio copiato. Incollalo su WhatsApp al numero del negozio.'; }, aMano); }
+    catch (err) { aMano(); }
+  });
+
+  /* ---------- cart ---------- */
+  var carrello = {};
+  try { carrello = JSON.parse(localStorage.getItem('odm-carrello') || '{}') || {}; } catch (e) { carrello = {}; }
+  Object.keys(carrello).forEach(function (k) { if (!perCod[k]) delete carrello[k]; });
+  var ordineFatto = false;
+  function salva() { try { localStorage.setItem('odm-carrello', JSON.stringify(carrello)); } catch (e) { /* storage unavailable: cart lives in the page */ } }
+  function pezzi() { return Object.keys(carrello).reduce(function (n, k) { return n + carrello[k]; }, 0); }
+  function aggiungi(cod) {
+    carrello[cod] = (carrello[cod] || 0) + 1; ordineFatto = false;
+    salva(); aggiornaCarrello();
+    avvisa('Aggiunto al carrello: ' + perCod[cod].nome);
+  }
+  function aggiornaCarrello() {
+    $('num-carrello').textContent = pezzi();
+    $('apri-carrello').setAttribute('aria-label', 'Apri il carrello, ' + plurale(pezzi(), 'articolo', 'articoli'));
+    var corpo = $('carr-corpo');
+    if (ordineFatto) return;
+    var cods = Object.keys(carrello);
+    if (!cods.length) {
+      corpo.innerHTML = '<div class="vuoto"><p style="margin:0;">Il carrello è vuoto.</p><button class="btn btn-rosso" type="button" data-vai-negozio>Guarda le offerte</button></div>';
+      return;
+    }
+    var tot = 0, risp = 0;
+    var righe = cods.map(function (c) {
+      var p = perCod[c], q = carrello[c];
+      tot += p.prezzo * q; risp += (p.pieno - p.prezzo) * q;
+      return '<li class="riga"><span class="riga-nome">' + p.nome + '</span><span class="riga-prezzo">' + euro(p.prezzo * q) + '</span>' +
+        '<span class="qta"><button type="button" data-meno="' + c + '" aria-label="Togli uno: ' + p.nome + '">−</button><span>' + q + '</span><button type="button" data-piu="' + c + '" aria-label="Aggiungi uno: ' + p.nome + '">+</button></span>' +
+        '<button class="togli" type="button" data-rimuovi="' + c + '">Rimuovi</button></li>';
+    }).join('');
+    corpo.innerHTML =
+      '<ul class="righe">' + righe + '</ul>' +
+      '<div class="totali"><div class="risp"><span>Risparmi</span><span>' + euro(risp) + '</span></div><div class="tot"><span>Totale</span><span>' + euro(tot) + '</span></div></div>' +
+      '<form class="form-ordine" id="form-ordine" novalidate>' +
+        '<fieldset><legend>Come lo vuoi</legend>' +
+          '<label class="opzione"><input type="radio" name="consegna" id="cons-ritiro" value="ritiro" checked> <span><b>Ritiro in negozio</b><br>Gratis, sul Corso dei Mille</span></label>' +
+          '<label class="opzione"><input type="radio" name="consegna" id="cons-casa" value="casa"> <span><b>Consegna a domicilio</b><br>Costo e zone <span class="da">[da definire]</span></span></label>' +
+        '</fieldset>' +
+        '<div class="campo"><label for="ord-nome">Nome e cognome</label><input id="ord-nome" name="nome" autocomplete="name" required></div>' +
+        '<div class="campo"><label for="ord-tel">Telefono</label><input id="ord-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></div>' +
+        '<p class="esito" id="ord-errore" role="alert"></p>' +
+        '<button class="btn btn-rosso" type="submit">Prenota l\'ordine</button>' +
+        '<p class="anteprima-nota">Anteprima: l\'ordine non viene inviato. Pagamento online e condizioni di consegna saranno attivati con il sito definitivo.</p>' +
+      '</form>';
+  }
+  $('carr-corpo').addEventListener('click', function (e) {
+    var t = e.target.closest('button'); if (!t) return;
+    var c;
+    if ((c = t.getAttribute('data-piu'))) carrello[c]++;
+    else if ((c = t.getAttribute('data-meno'))) { carrello[c]--; if (carrello[c] <= 0) delete carrello[c]; }
+    else if ((c = t.getAttribute('data-rimuovi'))) delete carrello[c];
+    else if (t.hasAttribute('data-vai-negozio')) { chiudi($('carrello')); vaiA('negozio'); return; }
+    else if (t.hasAttribute('data-nuovo')) { carrello = {}; ordineFatto = false; salva(); aggiornaCarrello(); chiudi($('carrello')); vaiA('negozio'); return; }
+    else return;
+    salva(); aggiornaCarrello();
+  });
+  $('carr-corpo').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nome = $('ord-nome').value.trim(), tel = $('ord-tel').value.trim();
+    if (!nome || tel.replace(/\D/g, '').length < 6) {
+      $('ord-errore').textContent = !nome ? 'Scrivi il tuo nome per prenotare.' : 'Scrivi un numero di telefono valido, così ti richiamiamo.';
+      (!nome ? $('ord-nome') : $('ord-tel')).focus();
+      return;
+    }
+    var ritiro = $('cons-ritiro').checked;
+    var elenco = Object.keys(carrello).map(function (c) { return '<li>' + carrello[c] + ' × ' + perCod[c].nome + '</li>'; }).join('');
+    ordineFatto = true;
+    $('carr-corpo').innerHTML = '<div class="fatto"><h3>Ordine pronto</h3>' +
+      '<p>Grazie ' + nome.replace(/[<>&"]/g, '') + '. Nel sito definitivo da qui partirebbe la prenotazione e ti richiameremmo per confermare ' + (ritiro ? 'il ritiro in negozio' : 'la consegna') + '.</p>' +
+      '<ul style="margin:0; padding-left: 20px;">' + elenco + '</ul>' +
+      '<p class="anteprima-nota">Questa è un\'anteprima: nessun ordine è stato inviato.</p>' +
+      '<button class="btn btn-rosso" type="button" data-nuovo>Svuota il carrello e torna alle offerte</button></div>';
+  });
+  $('apri-carrello').addEventListener('click', function () { aggiornaCarrello(); apri($('carrello')); });
+
+  /* ---------- hero: swinging price tags (canvas 2D) ---------- */
+  (function cartellini() {
+    var box = $('cartellini'), cv = box.querySelector('canvas'), ctx = cv.getContext('2d');
+    var ridotto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var etichette = ['-30%', '-50%', 'OUTLET', '-40%', 'STOCK', '-60%'];
+    var W = 0, H = 0, tags = [], ptr = { x: -999, y: -999, vx: 0, t: 0 }, ultimo = 0, attivo = true, pronto = false;
+
+    function layout() {
+      var dpr = Math.min(2, window.devicePixelRatio || 1);
+      W = box.clientWidth; H = box.clientHeight;
+      if (!W || !H) return;
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var n = W < 420 ? 4 : (W < 560 ? 5 : 6), sc = Math.max(0.62, Math.min(1, W / 520));
+      var vecchi = tags;
+      tags = etichette.slice(0, n).map(function (t, i) {
+        var prima = vecchi[i];
+        return { t: t, ax: W * (i + 0.5) / n, len: H * (0.22 + ((i * 3) % 5) * 0.09), th: prima ? prima.th : (i % 2 ? 0.16 : -0.12), om: prima ? prima.om : 0, s: sc, fase: i * 1.7 };
+      });
+      pronto = true;
+      disegna();
+    }
+    function pos(g) { return { x: g.ax + Math.sin(g.th) * g.len, y: Math.cos(g.th) * g.len }; }
+    function forma(g) {
+      ctx.font = Math.round(30 * g.s) + 'px Anton, Impact, sans-serif';
+      var tw = Math.max(70 * g.s, ctx.measureText(g.t).width + 30 * g.s), th = 56 * g.s, punta = 22 * g.s;
+      return { tw: tw, th: th, punta: punta };
+    }
+    function disegna() {
+      if (!pronto) return;
+      ctx.clearRect(0, 0, W, H);
+      ctx.strokeStyle = '#E8A6A0'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(0, 1); ctx.lineTo(W, 1); ctx.stroke();
+      tags.forEach(function (g) {
+        var p = pos(g), f = forma(g);
+        ctx.strokeStyle = '#F6D2CD'; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.moveTo(g.ax, 0); ctx.lineTo(p.x, p.y); ctx.stroke();
+        ctx.save();
+        ctx.translate(p.x, p.y); ctx.rotate(-g.th); ctx.translate(0, -10 * g.s);
+        ctx.fillStyle = 'rgba(80,6,12,.35)';
+        sagoma(f, 4 * g.s); ctx.fill();
+        ctx.fillStyle = '#FFC72C';
+        sagoma(f, 0); ctx.fill();
+        ctx.fillStyle = '#C1121F';
+        ctx.beginPath(); ctx.arc(0, 10 * g.s, 5 * g.s, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = '#7A0A12'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText(g.t, 0, f.punta + f.th / 2 + 1);
+        ctx.restore();
+      });
+    }
+    function sagoma(f, dy) {
+      ctx.beginPath();
+      ctx.moveTo(0, dy);
+      ctx.lineTo(f.tw / 2, f.punta + dy);
+      ctx.lineTo(f.tw / 2, f.punta + f.th + dy);
+      ctx.lineTo(-f.tw / 2, f.punta + f.th + dy);
+      ctx.lineTo(-f.tw / 2, f.punta + dy);
+      ctx.closePath();
+    }
+    function passo(ora) {
+      if (!attivo) { ultimo = 0; return; }
+      var dt = ultimo ? Math.min(0.033, (ora - ultimo) / 1000) : 0.016; ultimo = ora;
+      var t = ora / 1000;
+      tags.forEach(function (g) {
+        var p = pos(g), dx = ptr.x - p.x, dy = ptr.y - (p.y + 30 * g.s);
+        if (dx * dx + dy * dy < Math.pow(60 * g.s, 2) && Math.abs(ptr.vx) > 0) g.om += ptr.vx * 0.0009 * (200 / g.len);
+        var vento = Math.sin(t * 0.8 + g.fase) * 0.35;
+        g.om += (-(1500 / g.len) * Math.sin(g.th) - 0.9 * g.om + vento) * dt;
+        g.om = Math.max(-6, Math.min(6, g.om));
+        g.th += g.om * dt;
+      });
+      ptr.vx *= 0.8;
+      disegna();
+      requestAnimationFrame(passo);
+    }
+    function colpito(x, y) {
+      return tags.some(function (g) { var p = pos(g); return Math.abs(x - p.x) < 46 * g.s && y > p.y - 10 && y < p.y + 80 * g.s; });
+    }
+    box.addEventListener('pointermove', function (e) {
+      var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+      var ora = performance.now();
+      if (ptr.t) ptr.vx = (x - ptr.x) / Math.max(8, ora - ptr.t) * 16;
+      ptr.x = x; ptr.y = y; ptr.t = ora;
+      cv.style.cursor = colpito(x, y) ? 'pointer' : 'default';
+    });
+    box.addEventListener('pointerleave', function () { ptr.x = -999; ptr.t = 0; });
+    box.addEventListener('click', function (e) {
+      var r = cv.getBoundingClientRect();
+      if (colpito(e.clientX - r.left, e.clientY - r.top)) { filtra('tutti', null, 'sconto'); vaiA('catalogo'); }
+    });
+    if (window.ResizeObserver) new ResizeObserver(layout).observe(box); else window.addEventListener('resize', layout);
+    layout();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(disegna);
+    if (!ridotto) {
+      if (window.IntersectionObserver) {
+        new IntersectionObserver(function (v) {
+          var vis = v[0].isIntersecting;
+          if (vis && !attivo) { attivo = true; requestAnimationFrame(passo); }
+          attivo = vis;
+        }).observe(box);
+      }
+      requestAnimationFrame(passo);
+    }
+  })();
+
+  /* ---------- room planner: plan view + 3D view on canvas 2D, controls in the DOM ---------- */
+  var pianta = (function () {
+    var cv = $('tela'), ctx = cv.getContext('2d');
+    var ridotto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var stanza = { w: 420, d: 360, forma: 'rett', angolo: 'NE', rw: 140, rd: 120 };
+    var mobili = [], aperture = [], scelto = null, prossimoId = 1, trascina = null, vista = '2d', crescita = 1;
+    var geo = { s: 1, ox: 0, oy: 0, k: 1, W: 0, H: 0 };
+    var SNAP = 5, MURO3D = 110, C = Math.cos(Math.PI / 6), S = 0.5, ROSSO = '#C1121F';
+
+    /* --- room geometry: rectangle or L (a rectangle with one corner cut out) --- */
+    function poligono() {
+      var W = stanza.w, D = stanza.d, a = stanza.rw, b = stanza.rd;
+      if (stanza.forma !== 'L') return [[0, 0], [W, 0], [W, D], [0, D]];
+      if (stanza.angolo === 'NE') return [[0, 0], [W - a, 0], [W - a, b], [W, b], [W, D], [0, D]];
+      if (stanza.angolo === 'NW') return [[a, 0], [W, 0], [W, D], [0, D], [0, b], [a, b]];
+      if (stanza.angolo === 'SE') return [[0, 0], [W, 0], [W, D - b], [W - a, D - b], [W - a, D], [0, D]];
+      return [[0, 0], [W, 0], [W, D], [a, D], [a, D - b], [0, D - b]];
+    }
+    function rientranza() {
+      if (stanza.forma !== 'L') return null;
+      var W = stanza.w, D = stanza.d, a = stanza.rw, b = stanza.rd;
+      return { NE: { x: W - a, y: 0, w: a, d: b }, NW: { x: 0, y: 0, w: a, d: b }, SE: { x: W - a, y: D - b, w: a, d: b }, SW: { x: 0, y: D - b, w: a, d: b } }[stanza.angolo];
+    }
+    function muri() {
+      var P = poligono();
+      return P.map(function (a, i) {
+        var b = P[(i + 1) % P.length], dx = b[0] - a[0], dy = b[1] - a[1], len = Math.abs(dx) + Math.abs(dy);
+        return { a: a, b: b, len: len, ux: dx / len, uy: dy / len, nx: -dy / len, ny: dx / len }; // n points into the room
+      });
+    }
+
+    /* --- furniture as boxes (x, y, w, d on the floor; z, a = height) --- */
+    function parti(p) {
+      var pl = p.pianta, w = pl.w, d = pl.d, a = pl.h || 80;
+      if (pl.tipo === 'divano') {
+        var sb = Math.min(22, Math.round(d * 0.25));
+        if (pl.forma === 'L') return [{ x: 0, y: 0, w: w, d: sb, z: 0, a: a }, { x: 0, y: sb, w: w, d: pl.base - sb, z: 0, a: 45 }, { x: w - pl.chaise, y: pl.base, w: pl.chaise, d: d - pl.base, z: 0, a: 45 }];
+        return [{ x: 0, y: 0, w: w, d: sb, z: 0, a: a }, { x: 0, y: sb, w: w, d: d - sb, z: 0, a: 45 }];
+      }
+      if (pl.tipo === 'letto') return [{ x: 0, y: 0, w: w, d: 8, z: 0, a: a }, { x: 0, y: 8, w: w, d: d - 8, z: 0, a: 48 }];
+      if (pl.tipo === 'tavolo') return [
+        { x: 4, y: 4, w: 6, d: 6, z: 0, a: 72 }, { x: w - 10, y: 4, w: 6, d: 6, z: 0, a: 72 },
+        { x: 4, y: d - 10, w: 6, d: 6, z: 0, a: 72 }, { x: w - 10, y: d - 10, w: 6, d: 6, z: 0, a: 72 },
+        { x: 0, y: 0, w: w, d: d, z: 72, a: 4 }];
+      return [{ x: 0, y: 0, w: w, d: d, z: 0, a: a }];
+    }
+    function nuovo(cod) {
+      var p = perCod[cod];
+      return { id: prossimoId++, cod: cod, nome: p.nome, colore: p.colore, parts: parti(p), bw: p.pianta.w, bh: p.pianta.d, x: 0, y: 0 };
+    }
+    function snap(v) { return Math.round(v / SNAP) * SNAP; }
+    function limita(m) {
+      m.x = Math.max(0, Math.min(stanza.w - m.bw, m.x));
+      m.y = Math.max(0, Math.min(stanza.d - m.bh, m.y));
+      if (stanza.w < m.bw) m.x = 0;
+      if (stanza.d < m.bh) m.y = 0;
+    }
+    function ruota(m) {
+      var cx = m.x + m.bw / 2, cy = m.y + m.bh / 2, H = m.bh;
+      m.parts = m.parts.map(function (p) { return { x: H - (p.y + p.d), y: p.x, w: p.d, d: p.w, z: p.z, a: p.a }; });
+      var w = m.bw; m.bw = m.bh; m.bh = w;
+      m.x = snap(cx - m.bw / 2); m.y = snap(cy - m.bh / 2);
+      limita(m);
+    }
+    function rettangoli(m) { return m.parts.map(function (p) { return { x: m.x + p.x, y: m.y + p.y, w: p.w, d: p.d }; }); }
+    function incrocia(a, b) { return a.x < b.x + b.w && b.x < a.x + a.w && a.y < b.y + b.d && b.y < a.y + a.d; }
+    function tocca(m, r) { return rettangoli(m).some(function (q) { return incrocia(q, r); }); }
+
+    /* --- doors and windows sit on a wall: e = wall index, t = cm from its start --- */
+    function limitaApertura(o) {
+      var M = muri();
+      if (o.e >= M.length || M[o.e].len < o.larg) {
+        o.e = 0;
+        for (var i = 0; i < M.length; i++) if (M[i].len >= o.larg + 20) { o.e = i; break; }
+      }
+      var len = M[o.e].len, lo = Math.min(10, (len - o.larg) / 2), hi = len - o.larg - lo;
+      o.t = Math.max(lo, Math.min(hi, o.t));
+    }
+    function geoApertura(o) {
+      var m = muri()[o.e];
+      var p0 = [m.a[0] + m.ux * o.t, m.a[1] + m.uy * o.t], p1 = [m.a[0] + m.ux * (o.t + o.larg), m.a[1] + m.uy * (o.t + o.larg)];
+      var cern = o.cern ? p1 : p0, altro = o.cern ? p0 : p1;
+      var foglia = [cern[0] + m.nx * o.larg, cern[1] + m.ny * o.larg];
+      var xs = [p0[0], p1[0], p0[0] + m.nx * o.larg, p1[0] + m.nx * o.larg], ys = [p0[1], p1[1], p0[1] + m.ny * o.larg, p1[1] + m.ny * o.larg];
+      var area = { x: Math.min.apply(null, xs), y: Math.min.apply(null, ys), w: 0, d: 0 };
+      area.w = Math.max.apply(null, xs) - area.x; area.d = Math.max.apply(null, ys) - area.y;
+      return { m: m, p0: p0, p1: p1, cern: cern, altro: altro, foglia: foglia, area: area };
+    }
+
+    /* --- checks --- */
+    function problemi() {
+      var r = { sov: {}, porta: {}, portaBloccata: {}, fuori: {} }, cut = rientranza();
+      for (var i = 0; i < mobili.length; i++) {
+        for (var j = i + 1; j < mobili.length; j++) {
+          var A = rettangoli(mobili[i]), B = rettangoli(mobili[j]);
+          if (A.some(function (a) { return B.some(function (b) { return incrocia(a, b); }); })) { r.sov[mobili[i].id] = mobili[j]; r.sov[mobili[j].id] = mobili[i]; }
+        }
+        if (cut && tocca(mobili[i], cut)) r.fuori[mobili[i].id] = true;
+      }
+      aperture.forEach(function (o) {
+        if (o.tipo !== 'porta') return;
+        var g = geoApertura(o);
+        mobili.forEach(function (m) { if (tocca(m, g.area)) { r.porta[m.id] = o; r.portaBloccata[o.id] = m; } });
+      });
+      return r;
+    }
+    function distanze(m) {
+      var x0 = m.x, y0 = m.y, x1 = m.x + m.bw, y1 = m.y + m.bh, r = {};
+      muri().forEach(function (e) {
+        var ex0 = Math.min(e.a[0], e.b[0]), ex1 = Math.max(e.a[0], e.b[0]), ey0 = Math.min(e.a[1], e.b[1]), ey1 = Math.max(e.a[1], e.b[1]);
+        if (ex0 === ex1) {
+          var o0 = Math.max(y0, ey0), o1 = Math.min(y1, ey1); if (o1 - o0 <= 0) return;
+          if (ex0 <= x0 && (!r.sx || x0 - ex0 < r.sx.d)) r.sx = { d: x0 - ex0, w: ex0, m: (o0 + o1) / 2 };
+          if (ex0 >= x1 && (!r.dx || ex0 - x1 < r.dx.d)) r.dx = { d: ex0 - x1, w: ex0, m: (o0 + o1) / 2 };
+        } else {
+          var q0 = Math.max(x0, ex0), q1 = Math.min(x1, ex1); if (q1 - q0 <= 0) return;
+          if (ey0 <= y0 && (!r.su || y0 - ey0 < r.su.d)) r.su = { d: y0 - ey0, w: ey0, m: (q0 + q1) / 2 };
+          if (ey0 >= y1 && (!r.giu || ey0 - y1 < r.giu.d)) r.giu = { d: ey0 - y1, w: ey0, m: (q0 + q1) / 2 };
+        }
+      });
+      return r;
+    }
+    function metri(cm) { return (cm / 100).toLocaleString('it-IT', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' m'; }
+
+    /* --- canvas sizing and projections --- */
+    function misura() {
+      var dpr = Math.min(2, window.devicePixelRatio || 1);
+      geo.W = cv.clientWidth; geo.H = cv.clientHeight;
+      if (!geo.W || !geo.H) return false;
+      cv.width = Math.round(geo.W * dpr); cv.height = Math.round(geo.H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var m = 38;
+      geo.s = Math.min((geo.W - 2 * m) / stanza.w, (geo.H - 2 * m) / stanza.d);
+      geo.ox = (geo.W - stanza.w * geo.s) / 2; geo.oy = (geo.H - stanza.d * geo.s) / 2;
+      // isometric fit: room corners at floor and at the tallest furniture height
+      var zmax = 250, pts = [[0, 0], [stanza.w, 0], [stanza.w, stanza.d], [0, stanza.d]], minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9;
+      pts.forEach(function (p) {
+        [0, zmax].forEach(function (z) {
+          var sx = (p[0] - p[1]) * C, sy = (p[0] + p[1]) * S - z;
+          minx = Math.min(minx, sx); maxx = Math.max(maxx, sx); miny = Math.min(miny, sy); maxy = Math.max(maxy, sy);
+        });
+      });
+      var mi = 22;
+      geo.k = Math.min((geo.W - 2 * mi) / (maxx - minx), (geo.H - 2 * mi) / (maxy - miny));
+      geo.ix = (geo.W - (maxx - minx) * geo.k) / 2 - minx * geo.k;
+      geo.iy = (geo.H - (maxy - miny) * geo.k) / 2 - miny * geo.k;
+      return true;
+    }
+    function X(cm) { return geo.ox + cm * geo.s; }
+    function Y(cm) { return geo.oy + cm * geo.s; }
+    function iso(x, y, z) { return [geo.ix + (x - y) * C * geo.k, geo.iy + ((x + y) * S - (z || 0)) * geo.k]; }
+    function daIso(sx, sy) { var u = (sx - geo.ix) / (C * geo.k), v = (sy - geo.iy) / (S * geo.k); return { x: (u + v) / 2, y: (v - u) / 2 }; }
+    function percorso(pts) { ctx.beginPath(); pts.forEach(function (p, i) { if (i) ctx.lineTo(p[0], p[1]); else ctx.moveTo(p[0], p[1]); }); ctx.closePath(); }
+
+    function quota(x1, y1, x2, y2, testo) {
+      ctx.save();
+      ctx.strokeStyle = ROSSO; ctx.setLineDash([5, 4]); ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.font = '700 13px Barlow, Arial, sans-serif';
+      var tw = ctx.measureText(testo).width + 10, mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+      ctx.fillStyle = ROSSO; ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(mx - tw / 2, my - 10, tw, 20, 4); else ctx.rect(mx - tw / 2, my - 10, tw, 20);
+      ctx.fill();
+      ctx.fillStyle = '#FFFFFF'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(testo, mx, my + 1);
+      ctx.restore();
+    }
+    function etichettaMobile(m, cx, cy, maxw) {
+      ctx.font = '600 13px Barlow, Arial, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillStyle = chiaro(m.colore) ? '#241A17' : '#FFFFFF';
+      var testo = m.nome;
+      if (maxw < 24) return;
+      while (testo.length > 3 && ctx.measureText(testo).width > maxw) testo = testo.slice(0, -2);
+      if (testo !== m.nome) testo = testo.replace(/\s*\S?$/, '') + '…';
+      ctx.fillText(testo, cx, cy);
+    }
+
+    /* --- plan view --- */
+    function disegna2d(pr) {
+      var P = poligono().map(function (p) { return [X(p[0]), Y(p[1])]; });
+      var cut = rientranza();
+      if (cut) { // the missing corner, shown as "not your room"
+        ctx.save(); ctx.fillStyle = '#EFE8DE'; ctx.fillRect(X(cut.x), Y(cut.y), cut.w * geo.s, cut.d * geo.s);
+        ctx.beginPath(); ctx.rect(X(cut.x), Y(cut.y), cut.w * geo.s, cut.d * geo.s); ctx.clip();
+        ctx.strokeStyle = '#DDD2C3'; ctx.lineWidth = 1;
+        for (var h = -cut.d * geo.s; h < cut.w * geo.s; h += 10) { ctx.beginPath(); ctx.moveTo(X(cut.x) + h, Y(cut.y)); ctx.lineTo(X(cut.x) + h + cut.d * geo.s, Y(cut.y) + cut.d * geo.s); ctx.stroke(); }
+        ctx.restore();
+      }
+      ctx.fillStyle = '#FFFDF8'; percorso(P); ctx.fill();
+      ctx.save(); percorso(P); ctx.clip();
+      ctx.strokeStyle = '#EDE3D6'; ctx.lineWidth = 1; ctx.beginPath();
+      for (var gx = 50; gx < stanza.w; gx += 50) { ctx.moveTo(Math.round(X(gx)) + .5, Y(0)); ctx.lineTo(Math.round(X(gx)) + .5, Y(stanza.d)); }
+      for (var gy = 50; gy < stanza.d; gy += 50) { ctx.moveTo(X(0), Math.round(Y(gy)) + .5); ctx.lineTo(X(stanza.w), Math.round(Y(gy)) + .5); }
+      ctx.stroke();
+      // door swing areas
+      aperture.forEach(function (o) {
+        if (o.tipo !== 'porta') return;
+        var g = geoApertura(o), bloc = pr.portaBloccata[o.id];
+        ctx.fillStyle = bloc ? 'rgba(193,18,31,.14)' : 'rgba(90,67,53,.08)';
+        ctx.beginPath(); ctx.moveTo(X(g.cern[0]), Y(g.cern[1]));
+        arcoPorta(g, X, Y); ctx.closePath(); ctx.fill();
+      });
+      ctx.restore();
+      // walls
+      ctx.strokeStyle = '#241A17'; ctx.lineWidth = 6; ctx.lineJoin = 'miter'; percorso(P); ctx.stroke();
+      // openings on the walls
+      aperture.forEach(function (o) {
+        var g = geoApertura(o), sel = scelto && scelto.id === o.id;
+        if (o.tipo === 'finestra') {
+          ctx.strokeStyle = '#FFFDF8'; ctx.lineWidth = 8; linea(X(g.p0[0]), Y(g.p0[1]), X(g.p1[0]), Y(g.p1[1]));
+          ctx.strokeStyle = sel ? ROSSO : '#6FA3BA'; ctx.lineWidth = sel ? 4 : 3; linea(X(g.p0[0]), Y(g.p0[1]), X(g.p1[0]), Y(g.p1[1]));
+          ctx.strokeStyle = sel ? ROSSO : '#6FA3BA'; ctx.lineWidth = 1;
+          linea(X(g.p0[0] + g.m.nx * 5), Y(g.p0[1] + g.m.ny * 5), X(g.p1[0] + g.m.nx * 5), Y(g.p1[1] + g.m.ny * 5));
+          linea(X(g.p0[0] - g.m.nx * 5), Y(g.p0[1] - g.m.ny * 5), X(g.p1[0] - g.m.nx * 5), Y(g.p1[1] - g.m.ny * 5));
+        } else {
+          ctx.strokeStyle = '#FFFDF8'; ctx.lineWidth = 8; linea(X(g.p0[0]), Y(g.p0[1]), X(g.p1[0]), Y(g.p1[1]));
+          var col = sel || pr.portaBloccata[o.id] ? ROSSO : '#5A4335';
+          ctx.strokeStyle = col; ctx.lineWidth = sel ? 3.5 : 2.5;
+          linea(X(g.cern[0]), Y(g.cern[1]), X(g.foglia[0]), Y(g.foglia[1]));
+          ctx.lineWidth = 1.2; ctx.setLineDash([4, 3]);
+          ctx.beginPath(); ctx.moveTo(X(g.foglia[0]), Y(g.foglia[1])); arcoPorta(g, X, Y); ctx.stroke(); ctx.setLineDash([]);
+        }
+      });
+      // room size labels
+      ctx.fillStyle = '#685A54'; ctx.font = '600 14px Barlow, Arial, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
+      ctx.fillText(metri(stanza.w), X(stanza.w / 2), Y(0) - 10);
+      ctx.save(); ctx.translate(X(0) - 12, Y(stanza.d / 2)); ctx.rotate(-Math.PI / 2); ctx.fillText(metri(stanza.d), 0, 0); ctx.restore();
+      // furniture
+      mobili.forEach(function (m) {
+        var sel = scelto && scelto.id === m.id, male = pr.sov[m.id] || pr.porta[m.id] || pr.fuori[m.id];
+        m.parts.slice().sort(function (a, b) { return a.z - b.z; }).forEach(function (p) {
+          var x = X(m.x + p.x), y = Y(m.y + p.y), w = p.w * geo.s, d = p.d * geo.s;
+          ctx.fillStyle = p.a >= 60 && p.a < 200 ? tono(m.colore, 0.82) : m.colore; ctx.fillRect(x, y, w, d);
+          if (male) { ctx.fillStyle = 'rgba(193,18,31,.28)'; ctx.fillRect(x, y, w, d); }
+          ctx.strokeStyle = male || sel ? ROSSO : 'rgba(36,26,23,.5)'; ctx.lineWidth = sel ? 3 : (male ? 2.5 : 1.2);
+          ctx.strokeRect(x, y, w, d);
+        });
+        var big = m.parts.reduce(function (a, b) { return a.w * a.d >= b.w * b.d ? a : b; });
+        etichettaMobile(m, X(m.x + big.x + big.w / 2), Y(m.y + big.y + big.d / 2), big.w * geo.s - 10);
+      });
+      // clearances of the selected piece
+      if (scelto && scelto.tipo !== 'apertura') {
+        var m = scelto, r = distanze(m);
+        if (r.sx && r.sx.d > 0) quota(X(r.sx.w), Y(r.sx.m), X(m.x), Y(r.sx.m), r.sx.d + ' cm');
+        if (r.dx && r.dx.d > 0) quota(X(m.x + m.bw), Y(r.dx.m), X(r.dx.w), Y(r.dx.m), r.dx.d + ' cm');
+        if (r.su && r.su.d > 0) quota(X(r.su.m), Y(r.su.w), X(r.su.m), Y(m.y), r.su.d + ' cm');
+        if (r.giu && r.giu.d > 0) quota(X(r.giu.m), Y(m.y + m.bh), X(r.giu.m), Y(r.giu.w), r.giu.d + ' cm');
+      }
+    }
+    function linea(x1, y1, x2, y2) { ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); }
+    function arcoPorta(g, fx, fy) { // quarter circle from the open leaf to the closed position, as a polyline
+      var a0 = Math.atan2(g.foglia[1] - g.cern[1], g.foglia[0] - g.cern[0]), a1 = Math.atan2(g.altro[1] - g.cern[1], g.altro[0] - g.cern[0]);
+      var da = a1 - a0; while (da > Math.PI) da -= 2 * Math.PI; while (da < -Math.PI) da += 2 * Math.PI;
+      var r = Math.hypot(g.foglia[0] - g.cern[0], g.foglia[1] - g.cern[1]);
+      for (var i = 0; i <= 16; i++) { var an = a0 + da * i / 16; ctx.lineTo(fx(g.cern[0] + Math.cos(an) * r), fy(g.cern[1] + Math.sin(an) * r)); }
+    }
+
+    /* --- 3D view: isometric boxes, painter's order --- */
+    var scatole3d = [];
+    function disegna3d(pr) {
+      var g = crescita;
+      var P = poligono();
+      var Pi = P.map(function (p) { return iso(p[0], p[1], 0); });
+      ctx.fillStyle = '#FFFDF8'; percorso(Pi); ctx.fill();
+      ctx.save(); percorso(Pi); ctx.clip();
+      ctx.strokeStyle = '#EDE3D6'; ctx.lineWidth = 1;
+      for (var gx = 50; gx < stanza.w; gx += 50) { var a = iso(gx, 0, 0), b = iso(gx, stanza.d, 0); linea(a[0], a[1], b[0], b[1]); }
+      for (var gy = 50; gy < stanza.d; gy += 50) { var c = iso(0, gy, 0), d = iso(stanza.w, gy, 0); linea(c[0], c[1], d[0], d[1]); }
+      aperture.forEach(function (o) {
+        if (o.tipo !== 'porta') return;
+        var ga = geoApertura(o);
+        ctx.fillStyle = pr.portaBloccata[o.id] ? 'rgba(193,18,31,.16)' : 'rgba(90,67,53,.1)';
+        var c0 = iso(ga.cern[0], ga.cern[1], 0);
+        ctx.beginPath(); ctx.moveTo(c0[0], c0[1]);
+        var pts = puntiArco(ga); pts.forEach(function (q) { var s = iso(q[0], q[1], 0); ctx.lineTo(s[0], s[1]); });
+        ctx.closePath(); ctx.fill();
+      });
+      ctx.restore();
+      // back walls (the ones facing away from the viewer), low so they never hide furniture
+      muri().forEach(function (e, i) {
+        if (!(e.ny === 1 || e.nx === 1)) return;
+        var q = [iso(e.a[0], e.a[1], 0), iso(e.b[0], e.b[1], 0), iso(e.b[0], e.b[1], MURO3D), iso(e.a[0], e.a[1], MURO3D)];
+        ctx.fillStyle = e.ny === 1 ? '#EADFD2' : '#DDD0C0'; percorso(q); ctx.fill();
+        ctx.strokeStyle = '#CDBFAE'; ctx.lineWidth = 1; ctx.stroke();
+        aperture.forEach(function (o) {
+          if (o.e !== i) return;
+          var ga = geoApertura(o), z0 = o.tipo === 'porta' ? 0 : 45, z1 = o.tipo === 'porta' ? 100 : 95;
+          var w = [iso(ga.p0[0], ga.p0[1], z0), iso(ga.p1[0], ga.p1[1], z0), iso(ga.p1[0], ga.p1[1], z1), iso(ga.p0[0], ga.p0[1], z1)];
+          ctx.fillStyle = o.tipo === 'porta' ? '#B58A63' : '#BFDCE8'; percorso(w); ctx.fill();
+          ctx.strokeStyle = scelto && scelto.id === o.id ? ROSSO : 'rgba(36,26,23,.35)'; ctx.lineWidth = scelto && scelto.id === o.id ? 2.5 : 1; ctx.stroke();
+        });
+      });
+      // front edges of the floor + openings on front walls drawn on the floor line
+      muri().forEach(function (e, i) {
+        if (e.ny === 1 || e.nx === 1) return;
+        var a = iso(e.a[0], e.a[1], 0), b = iso(e.b[0], e.b[1], 0);
+        ctx.strokeStyle = '#241A17'; ctx.lineWidth = 3; linea(a[0], a[1], b[0], b[1]);
+        aperture.forEach(function (o) {
+          if (o.e !== i) return;
+          var ga = geoApertura(o), p0 = iso(ga.p0[0], ga.p0[1], 0), p1 = iso(ga.p1[0], ga.p1[1], 0);
+          ctx.strokeStyle = scelto && scelto.id === o.id ? ROSSO : (o.tipo === 'porta' ? '#B58A63' : '#6FA3BA'); ctx.lineWidth = 5; linea(p0[0], p0[1], p1[0], p1[1]);
+        });
+      });
+      // furniture boxes
+      scatole3d = [];
+      mobili.forEach(function (m) {
+        var male = pr.sov[m.id] || pr.porta[m.id] || pr.fuori[m.id];
+        m.parts.forEach(function (p) { scatole3d.push({ m: m, x: m.x + p.x, y: m.y + p.y, w: p.w, d: p.d, z: p.z, a: p.a, male: male }); });
+      });
+      mobili.forEach(function (m) { // soft shadows
+        ctx.fillStyle = 'rgba(36,26,23,.09)';
+        rettangoli(m).forEach(function (r) { percorso([iso(r.x + 4, r.y + 4, 0), iso(r.x + r.w + 4, r.y + 4, 0), iso(r.x + r.w + 4, r.y + r.d + 4, 0), iso(r.x + 4, r.y + r.d + 4, 0)]); ctx.fill(); });
+      });
+      scatole3d.sort(function (a, b) { return (a.x + a.w / 2 + a.y + a.d / 2 + a.z * 2) - (b.x + b.w / 2 + b.y + b.d / 2 + b.z * 2); });
+      scatole3d.forEach(function (s) {
+        var z0 = s.z * g, z1 = (s.z + s.a) * g, x1 = s.x + s.w, y1 = s.y + s.d;
+        var base = s.male ? '#E39A9C' : s.m.colore, sel = scelto && scelto.id === s.m.id;
+        s.facce = [
+          [iso(x1, s.y, z0), iso(x1, y1, z0), iso(x1, y1, z1), iso(x1, s.y, z1)],
+          [iso(s.x, y1, z0), iso(x1, y1, z0), iso(x1, y1, z1), iso(s.x, y1, z1)],
+          [iso(s.x, s.y, z1), iso(x1, s.y, z1), iso(x1, y1, z1), iso(s.x, y1, z1)]
+        ];
+        var colori = [tono(base, 0.7), tono(base, 0.84), base];
+        s.facce.forEach(function (f, i) {
+          ctx.fillStyle = colori[i]; percorso(f); ctx.fill();
+          ctx.strokeStyle = sel ? ROSSO : (s.male ? ROSSO : 'rgba(36,26,23,.32)'); ctx.lineWidth = sel ? 1.8 : 1; ctx.stroke();
+        });
+      });
+      // name tag over the selected piece
+      if (scelto && scelto.tipo !== 'apertura') {
+        var m = scelto, top = Math.max.apply(null, m.parts.map(function (p) { return p.z + p.a; })) * g;
+        var t = iso(m.x + m.bw / 2, m.y + m.bh / 2, top + 30);
+        ctx.font = '700 13px Barlow, Arial, sans-serif';
+        var tw = ctx.measureText(m.nome).width + 16;
+        ctx.fillStyle = '#241A17'; ctx.beginPath();
+        if (ctx.roundRect) ctx.roundRect(t[0] - tw / 2, t[1] - 13, tw, 26, 13); else ctx.rect(t[0] - tw / 2, t[1] - 13, tw, 26);
+        ctx.fill(); ctx.fillStyle = '#FFFFFF'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText(m.nome, t[0], t[1] + 1);
+      }
+    }
+    function puntiArco(g) {
+      var a0 = Math.atan2(g.foglia[1] - g.cern[1], g.foglia[0] - g.cern[0]), a1 = Math.atan2(g.altro[1] - g.cern[1], g.altro[0] - g.cern[0]);
+      var da = a1 - a0; while (da > Math.PI) da -= 2 * Math.PI; while (da < -Math.PI) da += 2 * Math.PI;
+      var r = Math.hypot(g.foglia[0] - g.cern[0], g.foglia[1] - g.cern[1]), out = [];
+      for (var i = 0; i <= 16; i++) { var an = a0 + da * i / 16; out.push([g.cern[0] + Math.cos(an) * r, g.cern[1] + Math.sin(an) * r]); }
+      return out;
+    }
+
+    function disegna() {
+      if (!misura()) return;
+      ctx.clearRect(0, 0, geo.W, geo.H);
+      var pr = problemi();
+      if (vista === '3d') disegna3d(pr); else disegna2d(pr);
+      info(pr);
+    }
+
+    /* --- the text under the plan, read by screen readers too --- */
+    function info(pr) {
+      var st = $('sel-stato');
+      $('sel-ruota').hidden = $('sel-carrello').hidden = !scelto || scelto.tipo === 'apertura';
+      $('sel-gira').hidden = !scelto || scelto.tipo !== 'apertura' || scelto.o.tipo !== 'porta';
+      $('sel-azioni').hidden = !scelto;
+      if (!scelto) { st.innerHTML = mobili.length ? 'Tocca un mobile, una porta o una finestra per spostarli.' : 'Aggiungi un mobile dall\'elenco.'; return; }
+      if (scelto.tipo === 'apertura') {
+        var o = scelto.o, nome = o.tipo === 'porta' ? 'Porta da ' + o.larg + ' cm' : 'Finestra da ' + o.larg + ' cm';
+        var t = '<span class="sel-nome">' + nome + '</span><br>Trascinala lungo i muri per metterla dove si trova davvero.';
+        if (o.tipo === 'porta') t += pr.portaBloccata[o.id] ? '<br><span class="avviso-sovrapp">' + pr.portaBloccata[o.id].nome + ' blocca l\'apertura della porta.</span>' : '<br>L\'arco di apertura è libero.';
+        st.innerHTML = t; return;
+      }
+      var m = scelto, r = distanze(m), parti = [];
+      if (r.sx) parti.push(r.sx.d + ' cm a sinistra');
+      if (r.dx) parti.push(r.dx.d + ' a destra');
+      if (r.su) parti.push(r.su.d + ' sopra');
+      if (r.giu) parti.push(r.giu.d + ' sotto');
+      var txt = '<span class="sel-nome">' + m.nome + '</span><br>Ingombro ' + m.bw + ' × ' + m.bh + ' cm.' + (parti.length ? ' Dai muri: ' + parti.join(', ') + '.' : '');
+      var spazio = Math.max(r.sx ? r.sx.d : 0, r.dx ? r.dx.d : 0, r.su ? r.su.d : 0, r.giu ? r.giu.d : 0);
+      if (pr.fuori[m.id]) txt += '<br><span class="avviso-sovrapp">Finisce nella rientranza: lì non c\'è stanza.</span>';
+      if (pr.sov[m.id]) txt += '<br><span class="avviso-sovrapp">Si sovrappone a: ' + pr.sov[m.id].nome + '.</span>';
+      if (pr.porta[m.id]) txt += '<br><span class="avviso-sovrapp">Blocca l\'apertura di una porta.</span>';
+      if (!pr.fuori[m.id] && !pr.sov[m.id] && !pr.porta[m.id] && spazio < 60) txt += '<br><span class="avviso-sovrapp">Resta poco spazio per passare (meno di 60 cm).</span>';
+      st.innerHTML = txt;
+    }
+
+    /* --- pointer: pick, drag (furniture moves on the floor in both views; openings slide along walls) --- */
+    function inCm(e) {
+      var r = cv.getBoundingClientRect(), sx = e.clientX - r.left, sy = e.clientY - r.top;
+      if (vista === '3d') return daIso(sx, sy);
+      return { x: (sx - geo.ox) / geo.s, y: (sy - geo.oy) / geo.s, sx: sx, sy: sy };
+    }
+    function dentroPoli(pt, poly) {
+      var dentro = false;
+      for (var i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+        var xi = poly[i][0], yi = poly[i][1], xj = poly[j][0], yj = poly[j][1];
+        if (((yi > pt[1]) !== (yj > pt[1])) && (pt[0] < (xj - xi) * (pt[1] - yi) / (yj - yi) + xi)) dentro = !dentro;
+      }
+      return dentro;
+    }
+    function trovaMobile(e, p) {
+      if (vista === '3d') {
+        var r = cv.getBoundingClientRect(), pt = [e.clientX - r.left, e.clientY - r.top];
+        for (var i = scatole3d.length - 1; i >= 0; i--) if (scatole3d[i].facce && scatole3d[i].facce.some(function (f) { return dentroPoli(pt, f); })) return scatole3d[i].m;
+        return null;
+      }
+      for (var j = mobili.length - 1; j >= 0; j--) {
+        if (rettangoli(mobili[j]).some(function (q) { return p.x >= q.x && p.x <= q.x + q.w && p.y >= q.y && p.y <= q.y + q.d; })) return mobili[j];
+      }
+      return null;
+    }
+    function trovaApertura(p) {
+      var tol = 16 / Math.max(geo.s, 0.3);
+      for (var i = aperture.length - 1; i >= 0; i--) {
+        var o = aperture[i], g = geoApertura(o);
+        var dx = g.p1[0] - g.p0[0], dy = g.p1[1] - g.p0[1], L2 = dx * dx + dy * dy;
+        var t = Math.max(0, Math.min(1, ((p.x - g.p0[0]) * dx + (p.y - g.p0[1]) * dy) / L2));
+        var d = Math.hypot(p.x - (g.p0[0] + dx * t), p.y - (g.p0[1] + dy * t));
+        if (d < tol) return o;
+        if (o.tipo === 'porta' && p.x >= g.area.x && p.x <= g.area.x + g.area.w && p.y >= g.area.y && p.y <= g.area.y + g.area.d) return o;
+      }
+      return null;
+    }
+    function selApertura(o) { return { tipo: 'apertura', id: o.id, o: o }; }
+    function spostaApertura(o, p) {
+      var M = muri(), best = null;
+      M.forEach(function (m, i) {
+        if (m.len < o.larg) return;
+        var t = Math.max(0, Math.min(m.len, (p.x - m.a[0]) * m.ux + (p.y - m.a[1]) * m.uy));
+        var d = Math.hypot(p.x - (m.a[0] + m.ux * t), p.y - (m.a[1] + m.uy * t));
+        if (!best || d < best.d) best = { d: d, i: i, t: t };
+      });
+      if (!best) return;
+      o.e = best.i; o.t = snap(best.t - o.larg / 2); limitaApertura(o);
+    }
+    cv.addEventListener('pointerdown', function (e) {
+      var p = inCm(e), m = trovaMobile(e, p), o = (!m && vista === '2d') ? trovaApertura(p) : null;
+      if (m) {
+        scelto = m; mobili.splice(mobili.indexOf(m), 1); mobili.push(m);
+        trascina = { dx: p.x - m.x, dy: p.y - m.y };
+        cv.setPointerCapture(e.pointerId);
+      } else if (o) {
+        scelto = selApertura(o); trascina = { apertura: o };
+        cv.setPointerCapture(e.pointerId);
+      } else scelto = null;
+      disegna();
+    });
+    cv.addEventListener('pointermove', function (e) {
+      if (!trascina || !scelto) return;
+      var p = inCm(e);
+      if (trascina.apertura) spostaApertura(trascina.apertura, p);
+      else { scelto.x = snap(p.x - trascina.dx); scelto.y = snap(p.y - trascina.dy); limita(scelto); }
+      disegna();
+    });
+    function fine() { trascina = null; }
+    cv.addEventListener('pointerup', fine); cv.addEventListener('pointercancel', fine);
+    cv.addEventListener('keydown', function (e) {
+      if (!scelto && mobili.length && /^Arrow/.test(e.key)) scelto = mobili[mobili.length - 1];
+      if (!scelto) return;
+      var step = e.shiftKey ? 25 : SNAP, fatto = true;
+      if (scelto.tipo === 'apertura') {
+        var o = scelto.o;
+        if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') o.t -= step;
+        else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') o.t += step;
+        else if (e.key === 'r' || e.key === 'R') o.cern = o.cern ? 0 : 1;
+        else if (e.key === 'Delete' || e.key === 'Backspace') togli();
+        else fatto = false;
+        if (fatto) { e.preventDefault(); if (scelto) limitaApertura(o); disegna(); }
+        return;
+      }
+      if (e.key === 'ArrowLeft') scelto.x -= step;
+      else if (e.key === 'ArrowRight') scelto.x += step;
+      else if (e.key === 'ArrowUp') scelto.y -= step;
+      else if (e.key === 'ArrowDown') scelto.y += step;
+      else if (e.key === 'r' || e.key === 'R') ruota(scelto);
+      else if (e.key === 'Delete' || e.key === 'Backspace') togli();
+      else fatto = false;
+      if (fatto) { e.preventDefault(); if (scelto) limita(scelto); disegna(); }
+    });
+
+    /* --- buttons --- */
+    function aggiungiMobile(cod) {
+      var m = nuovo(cod);
+      if (m.bw > stanza.w && m.bh <= stanza.w && m.bw <= stanza.d) ruota(m);
+      m.x = snap((stanza.w - m.bw) / 2); m.y = snap((stanza.d - m.bh) / 2);
+      limita(m); mobili.push(m); scelto = m; disegna(); mostraPianta();
+      if (m.bw > stanza.w || m.bh > stanza.d) $('sel-stato').innerHTML += '<br><span class="avviso-sovrapp">Questo mobile è più grande della stanza.</span>';
+    }
+    function aggiungiApertura(tipo) {
+      var larg = tipo === 'porta' ? 80 : 120, M = muri(), e = 0;
+      for (var i = 0; i < M.length; i++) if (M[i].len >= larg + 40) { e = i; if (aperture.every(function (o) { return o.e !== i; })) break; }
+      var o = { id: prossimoId++, tipo: tipo, e: e, t: (M[e].len - larg) / 2, larg: larg, cern: 0 };
+      limitaApertura(o); aperture.push(o); scelto = selApertura(o); disegna(); mostraPianta();
+    }
+    function togli() {
+      if (!scelto) return;
+      if (scelto.tipo === 'apertura') aperture.splice(aperture.indexOf(scelto.o), 1);
+      else mobili.splice(mobili.indexOf(scelto), 1);
+      scelto = null; disegna();
+    }
+    $('sel-ruota').addEventListener('click', function () { if (scelto && scelto.tipo !== 'apertura') { ruota(scelto); disegna(); } });
+    $('sel-gira').addEventListener('click', function () { if (scelto && scelto.tipo === 'apertura') { scelto.o.cern = scelto.o.cern ? 0 : 1; disegna(); } });
+    $('sel-togli').addEventListener('click', togli);
+    $('sel-carrello').addEventListener('click', function () { if (scelto && scelto.cod) aggiungi(scelto.cod); });
+    $('mobili-chips').innerHTML = prodotti.filter(function (p) { return p.pianta; }).map(function (p) {
+      return '<button class="chip" type="button" data-mobile="' + p.cod + '" aria-label="Aggiungi ' + p.nome + ', ' + p.pianta.w + ' per ' + p.pianta.d + ' centimetri">+ ' + p.breve + '<small>' + p.pianta.w + '×' + p.pianta.d + '</small></button>';
+    }).join('');
+    $('mobili-chips').addEventListener('click', function (e) { var b = e.target.closest('[data-mobile]'); if (b) aggiungiMobile(b.getAttribute('data-mobile')); });
+    $('aperture-chips').addEventListener('click', function (e) { var b = e.target.closest('[data-apertura]'); if (b) aggiungiApertura(b.getAttribute('data-apertura')); });
+
+    /* --- room controls: shape, corner, sizes --- */
+    function riadatta() {
+      stanza.rw = Math.max(40, Math.min(stanza.w - 100, stanza.rw));
+      stanza.rd = Math.max(40, Math.min(stanza.d - 100, stanza.rd));
+      ['rw', 'rd'].forEach(function (k) {
+        var max = k === 'rw' ? stanza.w - 100 : stanza.d - 100;
+        $(k + '-r').max = max; $(k + '-n').max = max; $(k + '-r').value = stanza[k]; $(k + '-n').value = stanza[k];
+      });
+      mobili.forEach(limita); aperture.forEach(limitaApertura);
+      disegna();
+    }
+    function lega(id, chiave, min) {
+      var r = $(id + '-r'), n = $(id + '-n');
+      function imposta(v) {
+        v = Math.max(min, Math.min(+r.max, Math.round((+v || 0) / 10) * 10));
+        stanza[chiave] = v; r.value = v; n.value = v; riadatta();
+      }
+      r.addEventListener('input', function () { imposta(r.value); });
+      n.addEventListener('change', function () { imposta(n.value); });
+    }
+    lega('larg', 'w', 200); lega('prof', 'd', 200); lega('rw', 'rw', 40); lega('rd', 'rd', 40);
+    document.querySelectorAll('[data-forma]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        stanza.forma = b.getAttribute('data-forma');
+        document.querySelectorAll('[data-forma]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        $('opz-L').hidden = stanza.forma !== 'L';
+        riadatta();
+      });
+    });
+    $('angoli').innerHTML = [['NW', 'In alto a sinistra'], ['NE', 'In alto a destra'], ['SW', 'In basso a sinistra'], ['SE', 'In basso a destra']].map(function (a) {
+      var q = { NW: '2,2,10,10', NE: '14,2,10,10', SW: '2,14,10,10', SE: '14,14,10,10' }[a[0]].split(',');
+      return '<button class="angolo-btn" type="button" data-angolo="' + a[0] + '" aria-pressed="' + (a[0] === stanza.angolo) + '" aria-label="Rientranza ' + a[1].toLowerCase() + '">' +
+        '<svg viewBox="0 0 26 26" aria-hidden="true"><rect x="2" y="2" width="22" height="22" fill="currentColor" opacity=".18"/><rect x="' + q[0] + '" y="' + q[1] + '" width="' + q[2] + '" height="' + q[3] + '" fill="#FBF7EF" stroke="currentColor" stroke-dasharray="2 2"/><rect x="2" y="2" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>';
+    }).join('');
+    $('angoli').addEventListener('click', function (e) {
+      var b = e.target.closest('[data-angolo]'); if (!b) return;
+      stanza.angolo = b.getAttribute('data-angolo');
+      document.querySelectorAll('[data-angolo]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      riadatta();
+    });
+
+    /* --- plan / 3D switch, with furniture rising from the floor --- */
+    var aiuto = { '2d': 'Vista dall\'alto: ogni quadretto è 50 cm. Trascina mobili, porte e finestre.', '3d': 'Vista 3D: trascina i mobili sul pavimento. Porte e finestre si spostano dalla pianta.' };
+    document.querySelectorAll('[data-vista]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        vista = b.getAttribute('data-vista');
+        document.querySelectorAll('[data-vista]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        $('tela-aiuto').textContent = aiuto[vista];
+        if (vista === '3d' && !ridotto) {
+          var t0 = performance.now();
+          (function cresci(ora) {
+            var t = Math.min(1, (ora - t0) / 750);
+            crescita = 1 - Math.pow(1 - t, 3);
+            disegna();
+            if (t < 1 && vista === '3d') requestAnimationFrame(cresci); else crescita = 1;
+          })(t0);
+        } else { crescita = 1; disegna(); }
+      });
+    });
+
+    /* --- tabs: Stanza / Porte e finestre / Mobili --- */
+    var tabs = [].slice.call(document.querySelectorAll('.scheda-tab'));
+    function apriTab(t, fuoco) {
+      tabs.forEach(function (x) {
+        var on = x === t;
+        x.setAttribute('aria-selected', String(on)); x.tabIndex = on ? 0 : -1;
+        $(x.getAttribute('aria-controls')).hidden = !on;
+      });
+      if (fuoco) t.focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { apriTab(t); });
+      t.addEventListener('keydown', function (e) {
+        var j = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : null;
+        if (j === null) return;
+        e.preventDefault(); apriTab(tabs[(j + tabs.length) % tabs.length], true);
+      });
+    });
+    function mostraPianta() {
+      if (!matchMedia('(max-width: 900px)').matches) return;
+      var r = cv.getBoundingClientRect(), testa = document.querySelector('.top').offsetHeight;
+      if (r.top < testa || r.bottom > window.innerHeight) cv.closest('.tela').scrollIntoView({ block: 'start', behavior: ridotto ? 'auto' : 'smooth' });
+    }
+
+    /* --- starting room so the tool opens in a working state --- */
+    var a = nuovo('DV-102'); mobili.push(a);
+    var b = nuovo('DV-104'); b.x = 320; b.y = 170; mobili.push(b);
+    var c = nuovo('MB-305'); c.x = 100; c.y = 315; mobili.push(c);
+    aperture.push({ id: prossimoId++, tipo: 'porta', e: 2, t: 50, larg: 80, cern: 0 });
+    aperture.push({ id: prossimoId++, tipo: 'finestra', e: 1, t: 60, larg: 120, cern: 0 });
+    aperture.forEach(limitaApertura);
+    scelto = a;
+    riadatta();
+
+    if (window.ResizeObserver) new ResizeObserver(disegna).observe(cv); else window.addEventListener('resize', disegna);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(disegna);
+    disegna();
+    return { aggiungi: aggiungiMobile };
+  })();
+
+  /* ---------- scroll story: price drops as you scroll (canvas 2D + DOM steps) ---------- */
+  (function storia() {
+    var sez = $('perche'), box = $('storia-tela'), cv = box.querySelector('canvas'), ctx = cv.getContext('2d');
+    var passi = document.querySelectorAll('#passi .passo');
+    var ridotto = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var W = 0, H = 0, p = ridotto ? 1 : 0, inCoda = false;
+    var LISTINO = 1490, OUTLET = 890;
+
+    function seg(v, a, b) { return Math.max(0, Math.min(1, (v - a) / (b - a))); }
+    function morbido(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+    function rr(x, y, w, h, r) { ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(x, y, w, h, r); else ctx.rect(x, y, w, h); }
+    function prezzoTesto(n) { return n.toLocaleString('it-IT') + ' €'; }
+
+    function misura() {
+      var dpr = Math.min(2, window.devicePixelRatio || 1);
+      W = box.clientWidth; H = box.clientHeight;
+      if (!W || !H) return false;
+      cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      return true;
+    }
+
+    function divano(cx, base, larg) {
+      // corner sofa drawn in the same style as the product drawings (200 x 140 units)
+      var k = larg / 200, x0 = cx - 100 * k, y0 = base - 130 * k;
+      function r(x, y, w, h, rad, col) { ctx.fillStyle = col; rr(x0 + x * k, y0 + y * k, w * k, h * k, rad * k); ctx.fill(); }
+      ctx.fillStyle = 'rgba(0,0,0,.28)'; ctx.beginPath(); ctx.ellipse(cx, base, 92 * k, 7 * k, 0, 0, Math.PI * 2); ctx.fill();
+      r(18, 40, 166, 42, 12, '#A8957B');
+      r(24, 76, 100, 32, 8, '#CDB99B');
+      r(118, 76, 66, 44, 8, '#DCCAAE');
+      r(8, 58, 24, 56, 10, '#A8957B');
+      ctx.strokeStyle = '#A8957B'; ctx.lineWidth = 2 * k; ctx.beginPath(); ctx.moveTo(x0 + 74 * k, y0 + 78 * k); ctx.lineTo(x0 + 74 * k, y0 + 106 * k); ctx.stroke();
+      r(20, 114, 6, 12, 1, '#5A4335'); r(176, 120, 6, 8, 1, '#5A4335');
+    }
+
+    function disegna() {
+      inCoda = false;
+      if (!W && !misura()) return;
+      ctx.clearRect(0, 0, W, H);
+      var stretto = W < 520;
+      // sofa
+      var larg = Math.min(W * (stretto ? .62 : .58), H * 1.05);
+      divano(stretto ? W * .34 : W * .38, H * .94, larg);
+
+      // price card
+      var cw = Math.min(stretto ? W * .56 : W * .5, 300), ch = cw * .78;
+      var cx = W - cw - (stretto ? 4 : W * .04), cy = H * (stretto ? .04 : .08);
+      ctx.fillStyle = 'rgba(0,0,0,.3)'; rr(cx + 6, cy + 8, cw, ch, 14); ctx.fill();
+      ctx.fillStyle = '#FFFFFF'; rr(cx, cy, cw, ch, 14); ctx.fill();
+      var pad = cw * .09, u = cw / 300;
+      ctx.textAlign = 'left'; ctx.textBaseline = 'alphabetic';
+      ctx.fillStyle = '#685A54'; ctx.font = '700 ' + Math.round(14 * u) + 'px "Barlow Condensed", Arial, sans-serif';
+      ctx.fillText('PREZZO DI LISTINO', cx + pad, cy + pad + 10 * u);
+      ctx.font = Math.round(34 * u) + 'px Anton, Impact, sans-serif';
+      var vecchio = prezzoTesto(LISTINO), vw = ctx.measureText(vecchio).width, vy = cy + pad + 52 * u;
+      ctx.fillStyle = p > .12 ? '#9C8F88' : '#241A17';
+      ctx.fillText(vecchio, cx + pad, vy);
+      var tag1 = morbido(seg(p, .12, .3));
+      if (tag1 > 0) {
+        ctx.strokeStyle = '#C1121F'; ctx.lineWidth = 4 * u; ctx.lineCap = 'round';
+        ctx.beginPath(); ctx.moveTo(cx + pad - 4 * u, vy - 12 * u); ctx.lineTo(cx + pad - 4 * u + (vw + 8 * u) * tag1, vy - 12 * u - 4 * u * tag1); ctx.stroke();
+      }
+      // falling price
+      var discesa = morbido(seg(p, .32, .68));
+      var ora = Math.round((LISTINO - (LISTINO - OUTLET) * discesa) / 10) * 10;
+      ctx.fillStyle = '#C1121F'; ctx.font = Math.round(72 * u) + 'px Anton, Impact, sans-serif';
+      ctx.fillText(prezzoTesto(ora), cx + pad, cy + pad + 132 * u);
+      var fin = seg(p, .68, .78);
+      ctx.globalAlpha = fin;
+      ctx.fillStyle = '#7A0A12'; ctx.font = '800 ' + Math.round(15 * u) + 'px "Barlow Condensed", Arial, sans-serif';
+      ctx.fillText('PREZZO OUTLET DEI MILLE', cx + pad, cy + pad + 160 * u);
+      ctx.globalAlpha = 1;
+
+      // yellow discount tag drops in and swings, driven by scroll
+      var cala = seg(p, .66, .76);
+      if (cala > 0) {
+        var q = seg(p, .74, 1), ang = .55 * Math.exp(-4 * q) * Math.cos(13 * q) * (cala < 1 ? 1 : 1);
+        var ax = cx + cw - 30 * u, ay = cy - 2;
+        var len = 46 * u * (0.2 + .8 * morbido(cala));
+        var hx = ax + Math.sin(ang) * len, hy = ay + Math.cos(ang) * len - (1 - morbido(cala)) * 60 * u;
+        ctx.strokeStyle = '#E9DFD8'; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(hx, hy); ctx.stroke();
+        ctx.save(); ctx.translate(hx, hy); ctx.rotate(-ang);
+        var tw = 104 * u, th = 58 * u, pt = 22 * u;
+        ctx.beginPath(); ctx.moveTo(0, -8 * u); ctx.lineTo(tw / 2, pt - 8 * u); ctx.lineTo(tw / 2, pt + th - 8 * u); ctx.lineTo(-tw / 2, pt + th - 8 * u); ctx.lineTo(-tw / 2, pt - 8 * u); ctx.closePath();
+        ctx.fillStyle = '#FFC72C'; ctx.fill();
+        ctx.fillStyle = '#C1121F'; ctx.beginPath(); ctx.arc(0, 4 * u, 5 * u, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = '#7A0A12'; ctx.font = Math.round(32 * u) + 'px Anton, Impact, sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText('-' + Math.round((1 - OUTLET / LISTINO) * 100) + '%', 0, pt + th / 2 - 6 * u);
+        ctx.restore();
+      }
+      // savings pill
+      var risp = seg(p, .84, .94);
+      if (risp > 0) {
+        ctx.globalAlpha = risp;
+        var testo = 'RISPARMI ' + prezzoTesto(LISTINO - OUTLET);
+        ctx.font = '800 ' + Math.round(19 * u) + 'px "Barlow Condensed", Arial, sans-serif';
+        var pw = ctx.measureText(testo).width + 30 * u, ph = 38 * u, px = cx + cw - pw, py = cy + ch + 16 * u + (1 - risp) * 14 * u;
+        ctx.fillStyle = '#C1121F'; rr(px, py, pw, ph, ph / 2); ctx.fill();
+        ctx.fillStyle = '#FFFFFF'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText(testo, px + pw / 2, py + ph / 2 + 1);
+        ctx.globalAlpha = 1;
+      }
+    }
+
+    function aggiornaPassi() {
+      var n = p < .32 ? 0 : (p < .68 ? 1 : 2);
+      passi.forEach(function (li, i) { li.classList.toggle('attivo', ridotto || i === n); });
+      var sc = $('storia-scorri'); if (sc) sc.style.opacity = String(1 - seg(p, .05, .2));
+    }
+    function leggiScroll() {
+      if (ridotto) return;
+      var r = sez.getBoundingClientRect(), corsa = sez.offsetHeight - window.innerHeight;
+      var nuovo = corsa > 0 ? Math.max(0, Math.min(1, -r.top / corsa)) : 1;
+      if (nuovo !== p) { p = nuovo; aggiornaPassi(); if (!inCoda) { inCoda = true; requestAnimationFrame(disegna); } }
+    }
+    window.addEventListener('scroll', leggiScroll, { passive: true });
+    if (window.ResizeObserver) new ResizeObserver(function () { misura(); disegna(); }).observe(box);
+    else window.addEventListener('resize', function () { misura(); disegna(); });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { disegna(); });
+    misura(); aggiornaPassi(); leggiScroll(); disegna();
+  })();
+
+  // keep the sticky story clear of the sticky header
+  function altezzaTesta() { document.documentElement.style.setProperty('--testa', document.querySelector('.top').offsetHeight + 'px'); }
+  altezzaTesta();
+  if (window.ResizeObserver) new ResizeObserver(altezzaTesta).observe(document.querySelector('.top'));
+
+  disegnaNegozio();
+  aggiornaCarrello();
+})();
+</script>
+</body>
+</html>
